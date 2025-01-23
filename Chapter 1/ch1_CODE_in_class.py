@@ -1,4 +1,4 @@
-###Slide 5 - Hello World
+###Slide 5
 
 
 ###Slide 15 - Data types
