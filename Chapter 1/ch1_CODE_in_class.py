@@ -1,19 +1,39 @@
 ###Slide 5
 
+# greet = 'hello, welcome!'
+# hello = 'Goodbye'
+#
+# print(hello)
+#
+# print(id(greet))
 
 ###Slide 15 - Data types
-
+# hello = 'hello'
+# a_string = hello
+# print(type(a_string))
+#
+# a_int = 2
+# a_float = 3.0
+# print(type(a_float))
+#
+# a_bool = True
+# print(type(a_bool))
 
 
 ###Slide 17 - Getting Input
-
+# name = input("What is your name: ")
+# print('Hello', name, 'how are you')
 
 
 ##Slide 18 Activity
-
+# welcome = 'Welcome to class'
+# print(welcome, name)
 
 ####Slide 19 Recasting Input
+a = int(input("Enter the first number: "))
+b = float(input("Enter th e second number: "))
 
+print(a+b)
 
 
 
