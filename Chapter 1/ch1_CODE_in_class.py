@@ -30,27 +30,30 @@
 # print(welcome, name)
 
 ####Slide 19 Recasting Input
-a = int(input("Enter the first number: "))
-b = float(input("Enter th e second number: "))
-
-print(a+b)
+# a = int(input("Enter the first number: "))
+# b = float(input("Enter th e second number: "))
+#
+# print(a+b)
 
 
 
 ###Slide 22 Outputting multiple data
 # name = input("Enter your name: ")
-# print() #Using commas to seperate data
-# print() # Using + to concatenate data into one string
-# print() # Using f-strings
+# age = int(input("Enter your age: "))
+
+# print('hello', name, 'you are', age, 'years old') # Using commas to seperate data
+# print('hello ' +  name + 'you are ' + str(age) + ' years old') # Using + to concatenate data into one string
+# print(f'Hello, {name}, you are {age} years old') # Using f-strings
 
 ###Slide 23 Operations
-# a =
-# b =
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
 
 # print(a+b)
 # print(a-b)
 # print(a*b)
-# print(a/b)
+print(a/b) # Regular division, always a FLOAT
+print(a//b) # Quotient division
 
 
 ##Slide 27
