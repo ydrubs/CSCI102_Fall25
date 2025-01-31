@@ -46,20 +46,20 @@
 # print(f'Hello, {name}, you are {age} years old') # Using f-strings
 
 ###Slide 23 Operations
-a = int(input("Enter the first number: "))
-b = int(input("Enter the second number: "))
+# a = int(input("Enter the first number: "))
+# b = int(input("Enter the second number: "))
+#
+# # print(a+b)
+# # print(a-b)
+# # print(a*b)
+# print(a/b) # Regular division, always a FLOAT
+# print(a//b) # Quotient division
 
-# print(a+b)
-# print(a-b)
-# print(a*b)
-print(a/b) # Regular division, always a FLOAT
-print(a//b) # Quotient division
 
-
-##Slide 27
+##Slide 28
 ##Run-Time error - Program stops execution when it encounters an error
-# length = int(input("Enter the length: "))
-# print(legnth)
+length = int(input("Enter the length: "))
+print(legnth)
 
 
 ##Syntax Error - Program does not execute at all
@@ -81,7 +81,7 @@ print(a//b) # Quotient division
 # print(a +)
 
 
-##Slide 29
+##Slide 30
 ##Traceback
 # def say(name):
 #     print('Hello, ' + nam)
