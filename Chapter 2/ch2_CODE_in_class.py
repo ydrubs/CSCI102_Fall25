@@ -1,35 +1,51 @@
+"""
+This is example code for Chapter 2
+This is code we did in class
+"""
+
 # ##Slide 2
 age = 122 # age of the oldest ever living person
 # # give the age of the person
 # print(age)
 
-# """Sometimes there is a need to explain or document a portrion of code beyond one line.
-# For this we can use a docstring to extend to multiple lines.
-# Docstrings are also used to attribute programs and explain functions."""
+"""Sometimes there is a need to explain or document a portrion of code beyond one line.
+For this we can use a docstring to extend to multiple lines.
+Docstrings are also used to attribute programs and explain functions."""
 
+# a = '2'
+# b = 2
+# print(a,b)
+# print(type(b))
 
 ##Slide 5
-
+# print(1,234)
+# print(1_234)
 
 
 
 
 ##Slide 7
+# print("that's")
+#
 # print("A double quoted string")
 # print('does the same thing as a single quoted string')
-#
+
 # print("However, there'll be times when a string needs to include a single quote within it, so a double quote is useful.")
 
-##Printing Multiline strings
+#Printing Multiline strings
 # welcomeText = '''Welcome to my game!
 # I will think of a number from 1 to 100, and you must try
 # to guess it. I'll tell you if your guess is too small
 # or too large.
+#
 # Enter an integer between 1 and 100 when prompted.'''
+#
 # print(welcomeText)
 
 
 ##Slide 8
+# print('Hello. \nHow \nare \nyou?')
+#
 # print("1. hello " + 'there') #Substitute one of the escape chars for the '#'
 # print("2. hello\b " + ' there')
 # print("3. hello\n " + ' there')
@@ -53,17 +69,20 @@ age = 122 # age of the oldest ever living person
 #
 # print("Hello", end=' ')
 # print('there')
+#
+# print("Hello", end=' :) :) ')
+# print('there')
 
 
 ##Slide 11
-# name = 'Yoda'
-# age = 900
-# home_planet = 'Dagobah'
+name = 'Yoda'
+age = 900
+home_planet = 'Dagobah'
 #
-# print()
-# print()
-# print()
-# print()
+print(name,age,home_planet)
+print(name,age,home_planet, sep = '\n')
+print(name,age,home_planet, sep = '**', end = ' :) ')
+print("The End")
 
 ###Activity from slide 13
 
