@@ -75,34 +75,55 @@ Docstrings are also used to attribute programs and explain functions."""
 
 
 ##Slide 11
-name = 'Yoda'
-age = 900
-home_planet = 'Dagobah'
-#
-print(name,age,home_planet)
-print(name,age,home_planet, sep = '\n')
-print(name,age,home_planet, sep = '**', end = ' :) ')
-print("The End")
+# name = 'Yoda'
+# age = 900
+# home_planet = 'Dagobah'
+# #
+# print(name,age,home_planet)
+# print(name,age,home_planet, sep = '\n')
+# print(name,age,home_planet, sep = '**', end = ' :) ')
+# print("The End")
 
 ###Activity from slide 13
+#Three 'Good' Variables
+# HITHERE = 'Hello'
+# hiThere = 'Hello'
+# hi_th0re = 'Hello'
 
-
+#Three Invalid variables
+# 1hi_there = 'hello'
+# if = 'hello'
+# hi! = 'Hello'
 
 ##Slide 14
 # first_name = "Obi-Wan"
 # last_name = "Kenobi"
-# full_name = pass
-# print(pass)
+# full_name = first_name + last_name
+# print(full_name)
+
+### Skill Check
+# print('Hello')
+# print("World")
+#
+# print("Hello", end = '\n')
+# print("WOrld")
+
+# print("Hello" + "World", sep = '....')
+# print("Hello", "World", sep = '....')
+
+# a = 2
+# print(f'The number is {a}') #F-string
+
 
 
 # #Reassigning Variables to new values
 # x = 125
 # y = x / 5    # y defined in terms of x
 # print(x, y)
-# #
+# # #
 # x = 100    # redefining x
 # print(x, y)
-# #
+# # #
 # y = 2 * y    # redefining y by modifying
 # print(x, y)
 
@@ -117,16 +138,22 @@ print("The End")
 # s1 = 'waaz'
 # s2 = 'a'
 # s3 = 'p'
-# print(pass)
-# print(pass)
+# print(s1 + s2*5 + s3)
+# print((s1 + s2*5 + s3 + ' ')*3)
 
 
 ###ACTIVITY slide 16
+# print(('^' * 10 + '\n') + (('#' * 10 + '\n')*3) + ('^' * 10 + '\n'))
 
 
 ##Slide 18 - Examples of right associative
-# print(2**3**4)
-# print(2**81)
+# print(9**0.5) #Exponents
+# print(10//9) # QUOTIENT
+# print(9%2)
+print(13%5)
+
+print(2**3**4)
+print(2**81)
 #
 # a = 1
 # a = a + 1
