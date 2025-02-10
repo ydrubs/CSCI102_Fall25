@@ -193,8 +193,8 @@ Docstrings are also used to attribute programs and explain functions."""
 # print('$', 100, sep = '') # This is okay too
 
 ##Slide 24
-s1 = "Mary"
-s2 = "Freddy"
+# s1 = "Mary"
+# s2 = "Freddy"
 
 # print(len(s1)) #Get the lenght of string s1 and s2
 # print(ord('M'), ord(s1[0])) # Get the ASCII code of the character
