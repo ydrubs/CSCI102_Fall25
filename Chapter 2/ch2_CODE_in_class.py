@@ -150,10 +150,10 @@ Docstrings are also used to attribute programs and explain functions."""
 # print(9**0.5) #Exponents
 # print(10//9) # QUOTIENT
 # print(9%2)
-print(13%5)
+# print(13%5)
 
-print(2**3**4)
-print(2**81)
+# print(2**3**4)
+# print(2**81)
 #
 # a = 1
 # a = a + 1
@@ -164,35 +164,54 @@ print(2**81)
 ## Slide 20
 # a = 6
 # b = 3
-# print(pass, type(a))
-# print(pass, type(a/b))
-# print(pass, type(a//b))
+# print(a, type(a))
+# print(a/b, type(a/b))
+# print(a//b, type(a//b))
 #
-# pass
-# pass
-# pass
+# c = 0.7
+# print(a+c, type(a+c))
+
+
+#Slide 21
+# a = 6.1
+# b = a-0.1
+# print(b+1, type(b+1))
 
 #Slide 23
+# d = 3.14
+# print(3/d)
 
 
+# print(round(6.75,0))
+# print(round(6.75,1))
+# print(round(6.75,2))
+# print(round(6.75,3))
+
+# print('$' + 100) # No good
+# print('$' + str(100)) #This is okay
+# print(f'$ {100}') # This is okay too
+# print('$', 100, sep = '') # This is okay too
 
 ##Slide 24
-# s1 = "Mary Poppins"
-# s2 = "Freddy"
+s1 = "Mary"
+s2 = "Freddy"
 
-# print(pass) #Get the lenght of string s1 and s2
-# print(pass) # Get the ASCII code of the character
-# print(pass) #Get the character from the ASCII code
+# print(len(s1)) #Get the lenght of string s1 and s2
+# print(ord('M'), ord(s1[0])) # Get the ASCII code of the character
+# print(chr(99+1)) #Get the character from the ASCII code
 # print(min(s2), max(s2)) #Find the smallest and largest ASCII character of s2
 
 
 ##Playing around with some character codes in unicode
 # print(chr(0x265e))
 # print(chr(0x250C))
-# print(chr(103436))
+# print(chr(203850))
 # print(int(0x265e))
+# print(chr(9822))
 
 # print('The ASCII code for the letter \'a\' is ' + str(ord('a')))
 
 # for i in range (9000, 10000):
 #     print(chr((i)), end = ', ')
+
+print(chr(ord('a')+10))
