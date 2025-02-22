@@ -3,7 +3,7 @@ This is example code for Chapter 2
 This is code we did in class
 """
 
-# ##Slide 2
+##Slide 2
 age = 122 # age of the oldest ever living person
 # # give the age of the person
 # print(age)
