@@ -1,6 +1,7 @@
 ##Slide 5 - One way selection statement
+
 # name = input("Enter your username: ")
-#pass
+# if name == 'admin':
 #     print("Access granted - secret area unlocked")
 #
 # print()
@@ -8,40 +9,43 @@
 
 
 
-
 #Slide 6 - If/else statement
 # name = input("Enter your username: ")
-#pass
+# if name == 'admin':
 #     print("Access granted - secret area unlocked")
-#pass
+# else:
 #     print("Incorrect username")
-
+#
+# print("Other code")
 
 
 ##Slide 7: Multi-way selection
-# number = int(input('Enter the numeric grade: '))
-# if number > 89:
-#     letter = 'A'
-# pass number > 79:
-#     letter = 'B'
-# pass number > 69:
-#     letter = 'C'
-# pass
-#     letter = 'F'
-# print('The letter grade is', letter)
+number = int(input('Enter the numeric grade: '))
+if number > 89:
+    letter = 'A'
+    print('here1')
+if number > 79:
+    letter = 'B'
+    print('here2')
+elif number > 69:
+    letter = 'C'
+else:
+    letter = 'F'
+#
+print(f'The letter grade is {letter}')
 
 
 # print("What color is the traffic light?")
 # trafficLight = input("(r)ed, (y)ellow, or (g)reen: ")
-
-# if pass or pass:
+#
+# if (trafficLight == 'r') or (trafficLight == 'red'):
 #     print("Stop!")
-# elif pass or pass:
-#     print("Proceed with caution.")
-# elif pass or pass:
+# elif (trafficLight == 'y') or (trafficLight == 'yellow'):
+#     print("Hit the Gas!!!")
+# elif (trafficLight == 'g') or (trafficLight == 'green'):
 #     print("Go ahead.")
 # else:
-#     print("Check your vision!")
+#     print("Check your vision, but drive like Mario Kart!")
 
 
 ##Slide 8 ACTIVITY
