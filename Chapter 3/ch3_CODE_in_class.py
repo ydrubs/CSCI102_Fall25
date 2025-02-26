@@ -20,19 +20,19 @@
 
 
 ##Slide 7: Multi-way selection
-number = int(input('Enter the numeric grade: '))
-if number > 89:
-    letter = 'A'
-    print('here1')
-if number > 79:
-    letter = 'B'
-    print('here2')
-elif number > 69:
-    letter = 'C'
-else:
-    letter = 'F'
-#
-print(f'The letter grade is {letter}')
+# number = int(input('Enter the numeric grade: '))
+# if number > 89:
+#     letter = 'A'
+#     print('here1')
+# if number > 79:
+#     letter = 'B'
+#     print('here2')
+# elif number > 69:
+#     letter = 'C'
+# else:
+#     letter = 'F'
+# #
+# print(f'The letter grade is {letter}')
 
 
 # print("What color is the traffic light?")
@@ -57,43 +57,56 @@ print(f'The letter grade is {letter}')
 # y = 5
 # z = 2
 #
-# print() #
-# print() #
-# print() #
-# print() #
-# print() #
+# print(x == y) # False
+# print(x > y) # True
+# print(y > x/z) # False
+# print(x.__ne__(y)) # True but don't worry about this
+# print(x != y)
 
 ##Slide 11
-# a = True
-# b = False
+a = True
+b = False
 
-# print(a or(a and b)) #
-# print(b and (a or b)) #
-# print(not b or (a and b)) #
-# print(a and not b or b and not a) #
-
-#Write your own challening logic statement, make it as long as you want
+#
+# print(a or(a and b)) # True
+# print(b and (a or b)) # False
+# print(not b or (a and b)) # True
+# print(a and not b or b and not a) # True
+#
+# #Write your own challening logic statement, make it as long as you want
+# print(a and not b or b and not a or (a and not b)) # True
 
 
 
 ##Slide 11
 # x = 40
 # y = 20
-# print(x == y or x == 2*y)
+# print(x == y or x == 2*y) # True
 # print(x > y and x > 2*y)
 # print(not(x == y or x == 2*y))
 
 ##slide 12
 # grade = int(input("What is your grade: "))
-# if pass:
+# if grade >=90 and grade < 101:
 #     print('Nice Job')
-# elif pass:
+# elif grade < 90 and grade >= 80:
 #     print('Not bad')
 # elif pass:
 #     print('There is room for improvement')
 # else:
 #     print("Better luck next time")
 
+## WRAP UP ACTIVITY
+valid_username = 'user123'
+is_active = False
+
+user = input("Enter a username: ")
+if user == valid_username and is_active:
+    print("access granted")
+elif user == valid_username and not is_active:
+    print("access denied")
+else:
+    print('No user found')
 
 
 ##Slide 15
