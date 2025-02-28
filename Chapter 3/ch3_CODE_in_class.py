@@ -64,8 +64,8 @@
 # print(x != y)
 
 ##Slide 11
-a = True
-b = False
+# a = True
+# b = False
 
 #
 # print(a or(a and b)) # True
@@ -97,47 +97,58 @@ b = False
 #     print("Better luck next time")
 
 ## WRAP UP ACTIVITY
-valid_username = 'user123'
-is_active = False
-
-user = input("Enter a username: ")
-if user == valid_username and is_active:
-    print("access granted")
-elif user == valid_username and not is_active:
-    print("access denied")
-else:
-    print('No user found')
+# valid_username = 'user123'
+# is_active = False
+#
+# user = input("Enter a username: ")
+# if user == valid_username and is_active:
+#     print("access granted")
+# elif user == valid_username and not is_active:
+#     print("access denied")
+# else:
+#     print('No user found')
 
 
 ##Slide 15
-# a = 4
+a = 4
+b = 'hello'
 
-# pass
-# pass
-# pass
+# for number in range(a):
+#     print(number, 'hello')
+#     number = number+1
+#     print(number)
+
+# for n in b:
+#     if n != 'h':
+#         print(n)
 
 ##Slide 17
 # number = 1
-# pass
-# pass
-# pass
+# for i in range(4):
+#     print(number)
+#     number = number + 3
+#
+# print(number)
+
 
 ##Slide 18
 # number = 1
 # times_2 = 2
+# print(number)
+#
 # for i in range(5):
 #     number = number * times_2
 #     print(number)
 
 ##Slide 19
-# for
-# pass
+# for i in range(11):
+#  print(i, end = '**')
 
-
+# print()
 ##Equivelant to the following but twice as long
 # count = 0
 # for i in range(11):
-#     print(count, end=' ')
+#     print(count, end='**')
 #     count = count + 1
 
 ##Checkpoint Activity
@@ -149,17 +160,25 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 ...
 20 Mississippi
 """""
-
+# for i in range(1,21):
+#     print(i, 'Mississippi')
 
 ##Slide21
-# pass
-# pass
-
+# for i in range(1,21, 5): # First argument is starting number, second is ending, third is count by
+#     print(i)
+#
+# for i in range(50,101):
+#     print(i)
 
 ##SLide 22
 #Count by threes
+# for i in range(1,100,3):
+#     print(i)
 
 #Count backwards from 100
+# for i in range(100,-1,-1):
+#     print(i)
+
 
 ##Slide 23
 # a = 5
