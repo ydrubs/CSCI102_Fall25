@@ -181,26 +181,40 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 
 
 ##Slide 23
-# a = 5
-# b = 5
+a = 5
+b = 5
 # print(a, b)
 
-# pass
-# pass
+a += 5
+b -= 2
 # print(a, b)
 
 
-# c = 2
-# d = 3
+c = 2
+d = 3
 # print(c, d)
 
-# pass
-# pass
+c *= 5
+d **= 2 #Square the d variable
 # print(c, d)
 
+### FIZZ BUZZ Exercise (in-class)
+for i in range(1, 101):
+    # print(i)
+    if i %3 == 0 and i %5 == 0:
+        print('FizzBuzz')
 
-# pass
-# print(d)
+    elif i %3 == 0:
+        print("Fizz")
+    elif i %5 == 0:
+        print('Buzz')
+
+    else:
+        print(i)
+
+
+
+
 
 ##Slide 25
 
