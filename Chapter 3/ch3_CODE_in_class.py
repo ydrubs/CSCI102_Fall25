@@ -181,92 +181,92 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 
 
 ##Slide 23
-a = 5
-b = 5
+# a = 5
+# b = 5
 # print(a, b)
 
-a += 5
-b -= 2
+# a += 5
+# b -= 2
 # print(a, b)
 
 
-c = 2
-d = 3
+# c = 2
+# d = 3
 # print(c, d)
 
-c *= 5
-d **= 2 #Square the d variable
+# c *= 5
+# d **= 2 #Square the d variable
 # print(c, d)
 
 ### FIZZ BUZZ Exercise (in-class)
-for i in range(1, 101):
-    # print(i)
-    if i %3 == 0 and i %5 == 0:
-        print('FizzBuzz')
-
-    elif i %3 == 0:
-        print("Fizz")
-    elif i %5 == 0:
-        print('Buzz')
-
-    else:
-        print(i)
-
-
-
-
-
-##Slide 25
-
-
-
-##slide 27 ACTIVITY
+# for i in range(1, 101):
+#     # print(i)
+#     if i %3 == 0 and i %5 == 0:
+#         print('FizzBuzz')
+#
+#     elif i %3 == 0:
+#         print("Fizz")
+#     elif i %5 == 0:
+#         print('Buzz')
+#
+#     else:
+#         print(i)
 
 
 
 
+##Slide 26
+""" Ask for a number and add until you hit 1000 """
+# stop = 1000
+# total = 0
+#
+# while total < stop: # while loop is an entry-controlled loop
+#     n = int(input("Please enter a number to add to the total: "))
+#     total += n
+#     print(total)
 
-##Slide 28
+
+##slide 28 ACTIVITY
+# stop = 1000
+# total = 0
+# step = float(input("Enter the step count: "))
+#
+# while total < stop:
+#     print(round(total,1))
+#     total += step
+#
+# print('Done')
+
+
+
+
+##Slide 29
 # theSum = 0.0
 # data = input('Enter a number or just enter to quit: ')
-#
-# while pass:
+# #
+# while data != '':
 #     number = float(data)
 #     theSum += number
 #     data = input('Enter a number or just enter to quit: ')
 #     print('The sum is', theSum)
 
 
-##Slide 29
+##Slide 30
 # theSum = 0.0
-# while pass:
+# while True:
 #     data = input("Enter a number or just enter to quit: ")
-#     if data == pass:
-#         pass
-#
+#     if data == 'stop':
+#         break
+# #
 #     number = float(data)
 #     theSum += number
 #     print("The sum is", theSum)
 
-##Slide 31
-# while True:
-#     number = int(input("Enter the numeric grade: "))
-#     if pass:
-#         pass
-#
-#     else:
-#         print("Error: grade must be between 100 and 0")
-#         print(number) # Just echo the valid input
-
-
 ##Slide 32
-# done = False
-#
-# while not done:
+# while True: # Runs forever (until break)
 #     number = int(input("Enter the numeric grade: "))
-#     if number >= 0 and number <= 100:
-#         print("Setting 'done' to True")
-#         pass
+#     if number >= 0 and number <=100:
+#         break
 #
 #     else:
 #         print("Error: grade must be between 100 and 0")
@@ -274,11 +274,26 @@ for i in range(1, 101):
 
 
 ##Slide 33
-#Fail to break loop
+# done = False
+# #
+# while not done:
+#     number = int(input("Enter the numeric grade: "))
+#     if number >= 0 and number <= 100:
+#         print("Setting 'done' to True")
+#         done = True
+# #
+#     else:
+#         print("Error: grade must be between 100 and 0")
+#         print(number) # Just echo the valid input
+
+
+#Slide 34
+# Fail to break loop
 # while True:
 #     number = int(input('Enter the numeric grade: '))
 #     if number >= 0 and number <= 100:
 #         print(number)
+#         # NEED TO ADD 'break'
 #
 #     else:
 #         print('Error: grade must be between 100 and 0')
@@ -286,37 +301,55 @@ for i in range(1, 101):
 
 ################infinite Loop, not updating variable
 # a = 0
+# count = 0
 # while a < 1000:
-#     print(a)
+#     count += 1
+#     print(a, count)
 
-################Did not test for a = 500 condition
+###############Did not test for a = 500 condition
 # a = 0
+#
 # while a < 1000:
 #     a +=1
 #     if a < 500:
 #         print("Boom", a)
 #     if a > 500:
 #         print('Pow', a)
-
-##Slide 34
-# pass
-# pass
-# pass
+    ###Doesn't test a = 500
 
 
 ##Slide 35
-##Dice rolling simulator
-# pass
-# pass
-# pass
+# import random
+# n = random.random()
+# print(n)
+
+# from random import randint # Don't have to reference random this way
+# n = randint(1,100)
+# print(n)
 
 
-##Guess the number game
+
+
+##Slide 36
+##Dice rolling simulator - generate 10 random numbers between 1 and 6
+# from random import randint
+#
+# for i in range(10):
+#     print(randint(1,6), end = ' ,')
+#
+#     # Richy's 8-ball spectaculaer
+#     n = randint(1,8)
+#     if n == 7:
+#         print('Absolutely')
+
+
+
+# ##Guess the number game
 # import random
 #
 # myNumber = random.randint(1,100)
 # count = 0
-#
+# #
 # while True:
 #     count += 1
 #     userNumber = int(input("Enter your guess: "))
