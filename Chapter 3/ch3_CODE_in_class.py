@@ -34,7 +34,6 @@
 # #
 # print(f'The letter grade is {letter}')
 
-
 # print("What color is the traffic light?")
 # trafficLight = input("(r)ed, (y)ellow, or (g)reen: ")
 #
