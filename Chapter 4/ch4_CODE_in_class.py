@@ -1,37 +1,44 @@
 # #Slide 3
 # string = 'Hello to you'
-# for pass: #Iterate through the individual characters
-#     print(pass)
+# for char in string: #Iterate through the individual characters
+#     print(char)
+
+#This will give an ERROR because an integer is not ITERABLE
+# n = 10
+# for digit in n:
+#     print(digit)
+
+# The Length of a string (IMPORTANT TO KNOW)
+# print(len(string))
+# print(len(".,jsnf;ksdnc;ksdnc;isnc;kjdsnfek .kdsnfj"))
 
 # print()
-# print(pass) #print the character at the specified index
-
-# myNum = 10
-# for digit in myNum: #Demonstrate that an integer cannot be broken down into digits like a string can
-#     print(digit, end='')
+# print(string[4]) #print the character at the specified index
 
 
 #Slide 4
-# name = 'Skywalker'
-# print(pass) #The first letter is 'S'
+name = 'Skywalker'
+# print(name[0]) #The first letter is 'S'
+# print(len(name))
 #
-# print(pass)
-# print(pass) #Results in an index error
-# print(pass) #Takes one less than the last value
+# print(name[9]) #Results in an index error
+# print(name[len(name)]) # Also an error because len(name) is 9
 
-# print(pass) #  last character is 'r'
-# print(pass) #  Second to last character is 'e'
+
+# print(name[-1]) # last character is 'r'
+# print(name[-2]) #  Second to last character is 'e'
 
 ##Slide 5
-# data = 'Hi there!'
+data = 'Hi there!'
 #
-# ###Loop Through the indexes of the string
-# for pass:
-#     print(pass)
+# ###Loop Through the indexes of the string (Important)
+for char in range(len(data)):
+    # print(char) # only counts numbers this way
+    print(data[5])
 #
 # ##Loop through the elements of the string
-# for pass:
-#     print(pass)
+for char in data:
+    print(char)
 
 
 ##Slide 7
