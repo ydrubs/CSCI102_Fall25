@@ -32,14 +32,25 @@ name = 'Skywalker'
 data = 'Hi there!'
 #
 # ###Loop Through the indexes of the string (Important)
-for char in range(len(data)):
+# for char in range(len(data)):
     # print(char) # only counts numbers this way
-    print(data[5])
+    # print(data[5])
 #
 # ##Loop through the elements of the string
-for char in data:
-    print(char)
+# for char in data:
+#     print(char)
 
+
+### YOUR TURN
+# song = 'Harmony Hall'
+# print(song[1])
+# print(len(song))
+#
+# for i in range(len(song)):
+#     print(song[i], end = ':)')
+#
+# for char in song:
+#     print(char)
 
 ##Slide 7
 # mutable = ['G', 'O', 'O', 'D']
@@ -50,51 +61,58 @@ for char in data:
 # immutable = 'Good'
 # print(immutable)
 # print(immutable[0]) #This command is fine
-
-# immutable[0] = 'H' # ..This is not. Can't override the individuals characters
+#
+# # immutable[0] = 'H' # ..This is not. Can't override the individuals characters
 # immutable = 'Hood' #...But you can override the variable itself
 # print(immutable)
 
 ##Slide 9
-# name = 'myfile.txt'
-# # print(pass)
-# # print(pass)
-# # print(pass)
-# # print(pass)
+name = 'myfile.txt'
+# print(name[0:])
+# print(name[0:1])
+# print(name[0:2])
+# print(name[2:6])
+# print(name[:2]) # THis is the same as name[0:2]
 
-# print(pass)
-# print(pass)
+# print(name[-3:-1]) # Start at third to last and go to last
+# print(name[0::2]) # Start at the beginning and go every other letter
 #
-# print(pass)
-# print(pass)
+
+# print(name[100]) #ERROR
+# print(name[0:100])# This is okay
+# print(name[-3:-1] +  name[2:6])
+
 
 ##Slide 9 - Try to run your own experiments with the string below
 # my_string = "Give a man a program, frustrate him for a day. " \
 #             "Teach a man to program, frustrate him for a lifetime."
 
 ##Slide 10 - Your turn - Move Two Letters
-
+# a = input("Enter a string, please: ")
+# print(a[-2:] + a[0:-2])
 
 
 ##Slide 11
-# superhero = 'incredible HULK'
-#
-# print(pass)
-# print(pass)
-# print(pass
+superhero = 'incredible HULK'
+
+# print(superhero.upper())
+# print(superhero.title())
+# print(superhero.lower())
+# print(superhero.isdigit())
 
 
 ##Slide 12
-# address = '123 Fake St.'
-#
-# for pass:
-#     print(pass)
+address = '123 Fake St.'
+
+# Check which characters are digits
+# for char in address:
+#     print(char.isdigit())
 #
 # for char in address:
-#     print(pass
+#     print(char.isupper())
 #
 # for char in address:
-#     print(pass)
+#     print(char.isspace())
 
 
 ##Slide 13
