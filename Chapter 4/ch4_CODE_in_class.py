@@ -118,15 +118,17 @@ address = '123 Fake St.'
 ##Slide 13
 ##Map a directory of files by using the split command
 # string = "C:\\Users\\yuriy.drubinskiy\OneDrive - Garden City Community College\\Python Class\\Powerpoints and notes"
-# string = pass
-# print(pass)
-#
-# print(pass)
+# string = string.split('\\')
+
+# print(string)
+
+# print('*'.join(string)) # Combining back into a single string
 
 
 ##Slide 13/14 - STRING METHODS SUMMARY
 ####COmmands that let you access and see info about what string methods do
-# print(dir(str)) # A list of available methods for the 'string' object
+# greeting = 'hello'
+# print(dir(greeting)) # A list of available methods for the 'string' object
 # print(help(str)) # A more detailed description of each available method
 
 
@@ -138,24 +140,59 @@ address = '123 Fake St.'
 # their first victory against
 # the evil Galactic Empire."""
 #
-# print(pass)
-# print(pass)
-# print(pass)
+# print('time' in text) #True
+# print('empire' in text) # False
+# print('galactic' in text.casefold()) #TRUE because Ignores case-sensitivity in the string
+
 #
-# print(pass)
-# print(pass) #SInce war first appears at character 67, we can see what characters 60-69 are
+# print(text[60:70]) # show all charaters from character 60 to character 69
+# print(text.index('war')) #SInce war first appears at character 67, we can see what characters 60-69 are
+
+
 
 ##Slide16
 ##he variable below defines a list data structure. We will lean more about this in chapter 5
-# fileList = ['myfile.txt', 'myprogram.exe', 'yourfile.txt']
-# for pass:
-#     if pass:
-#         print(pass)
+# fileList = ['myfile.txt', 'myprogram.exe', 'yourfile.txt', 'dont_open.txt']
+# for file in fileList:
+#     if '.txt' in file:
+#         print(file)
 
 ##Slide 17
 # import this
+words_of_wisdom = """
+The Zen of Python, by Tim Peters
 
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!"""
 
+print(words_of_wisdom)
+words = words_of_wisdom.split('a')
+print(words)
+
+count = 0
+for word in words:
+    if 'a' in word or 'e' in word:
+        count +=1
+print(count)
+
+print(words_of_wisdom.count('e') + words_of_wisdom.count('a'))
 
 
 #Slide 21
