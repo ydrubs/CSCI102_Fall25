@@ -159,92 +159,115 @@ address = '123 Fake St.'
 
 ##Slide 17
 # import this
-words_of_wisdom = """
-The Zen of Python, by Tim Peters
-
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!"""
-
-print(words_of_wisdom)
-words = words_of_wisdom.split('a')
-print(words)
-
-count = 0
-for word in words:
-    if 'a' in word or 'e' in word:
-        count +=1
-print(count)
-
-print(words_of_wisdom.count('e') + words_of_wisdom.count('a'))
+# words_of_wisdom = """
+# The Zen of Python, by Tim Peters
+#
+# Beautiful is better than ugly.
+# Explicit is better than implicit.
+# Simple is better than complex.
+# Complex is better than complicated.
+# Flat is better than nested.
+# Sparse is better than dense.
+# Readability counts.
+# Special cases aren't special enough to break the rules.
+# Although practicality beats purity.
+# Errors should never pass silently.
+# Unless explicitly silenced.
+# In the face of ambiguity, refuse the temptation to guess.
+# There should be one-- and preferably only one --obvious way to do it.
+# Although that way may not be obvious at first unless you're Dutch.
+# Now is better than never.
+# Although never is often better than *right* now.
+# If the implementation is hard to explain, it's a bad idea.
+# If the implementation is easy to explain, it may be a good idea.
+# Namespaces are one honking great idea -- let's do more of those!"""
+#
+# print(words_of_wisdom)
+# words = words_of_wisdom.split('a')
+# print(words)
+#
+# count = 0
+# for word in words:
+#     if 'a' in word or 'e' in word:
+#         count +=1
+# print(count)
+#
+# print(words_of_wisdom.count('e') + words_of_wisdom.count('a'))
 
 
 #Slide 21
-# f = open('myfile.txt', 'w')
-# f.write("1. Justin Herbert $52.5 million\n2. Lamar Jackson $52 million\n3.Jalen Hurts $51 million")
-# f.close()
+f = open('myfile.txt', 'w')
+f.write("1. Justin Herbert $52.5 million\n2. Lamar Jackson $52 million\n3.Jalen Hurts $51 million\n\n This is not valid anymore")
+f.close()
+
+## In class practice
+"""
+Create a text file using Python.
+
+ Write about how cool your programming instructor is…
+(or any other text you want) 
+
+"""
+
 
 #Slide 23
 # import random
 # f = open('integers.txt', 'w')
-
-# pass
-
+#
+# for count in range(500):
+#     number = random.randint(1,100)
+#     f.write(str(number) + '\n')
+#
 # f.close()
+
 
 ##Slide 24
 # f = open("myfile.txt", 'r')
+# text = f.read()
+# print(text)
+
 # #
 # # ##Since the text file is broken up into lines, readline() adds an extra carrige return (\n)
 # while True: #As long as there's data to read, read it
-#     pass
-#     pass
-#         pass
+#     line = f.readline()
+#     if line == '':
+#          break
+#
+#     print(line)
 
-#     print(pass)
 
 ##Slide 25
-## f = open('integers2.txt', 'r') #COMMENT OUT TO SEE WHY THIS FILE CANNOT BE READ
 # f = open('integers.txt', 'r')
 # theSum = 0
-
-# pass
-
+#
+# for line in f:
+#     number = int(line)
+#     theSum += number
+#
 # print('The sum is', theSum)
 
+
+""""
+We didn't cover this in class.
+It discusses splitting data that is not being read line-by-line rather seperated by a space character.
+This isn't crucial at this point in the class so we won't get bogged down with the details.
+"""
 ##Slide26
 ###GENERATE SOME DATA TO BE READ
-# import random
-#
-# f = open('integers2.txt', 'w')
-# for count in range(500):
-#     number = random.randint(1, 500)
-#     f.write(str(number) + ' ') # Create random ints with a space seperator
-# f.close()
+import random
+
+f = open('integers2.txt', 'w')
+for count in range(500):
+    number = random.randint(1, 500)
+    f.write(str(number) + ' ') # Create random ints with a space seperator
+f.close()
 
 # ###Read from the file and sum it
-# f = open('integers2.txt', 'r')
-# theSum = 0
-# pass:
-#     pass #Split on space or newline (you can specify a string argument for other seperators)
-#     pass:
-#         pass
-#         pass
-
-# print('The sum is', theSum)
+f = open('integers2.txt', 'r')
+theSum = 0
+for line in f:
+    wordlist = line.split() #Split on space or newline (you can specify a string argument for other seperators)
+    for word in wordlist:
+        number = int(word)
+        theSum += number
+print('The sum is', theSum)
