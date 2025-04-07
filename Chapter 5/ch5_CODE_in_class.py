@@ -1,58 +1,76 @@
 ##Slide 5 - Defining lists
+# fruits = ['apples', 'oranges', 'cherries']
+# profile = [24, 3.2, 'hello', True]
+# coordinates = [[-3,1], [0,3]]
+# freinds = [] # Empty list
+#
+# print(len(fruits))
+# print(fruits[1]) # Will say oranges
+# print(profile[-1]) # Will say True
+#
+# print(coordinates[0][0]) # Gives -3 because that is the first element in the first sub-list
 
 ##Storing the result of a math operation in a list
 # import math
 # x = 2
-# lst = [pass]
-# print(pass)
-# print(pass)
-# print(pass)
-# print(pass)
+# lst = [x, math.sqrt(2), round(math.pi, 2), x+1]
+# print(lst)
+# print(lst[1])
+# print(lst[x+1]) # Gives three BECAUSE the element in positon 3 is equal 3
 
 #Slide 6 - Your turn
 
 
-
 ##Slide 7
+import random
 # first = [1,2,3,4]
-# second = pass
-# print(pass)
+# second = list(range(1,53))
+#
+# print(max(first)) # Gives 4
+# print(min(first)) # Gives 1
+# print(sum(second))
 
-# print(pass) #returns the biggest value in the list
-# print(pass) #returns the smallest value in a list
-# print(pass) #returns the sum of a list
+
+# print(first) #returns the biggest value in the list
+# print(second) #returns the smallest value in a list
+# print(second[random.randint(1,53)])
 
 ##Build a list from a string
-# message = 'Hello There'
-# message_lst = pass
+# message = 'Hello There How Are you Today'
+# message_lst = list(message)
 # print(message_lst)
-#
+
+
 # #Other list operations
-# print(pass) #chek the number of elements in a list
-# print(pass) #Combine two lists together with a '+' sign
+# print(len(message_lst)) #chek the number of elements in a list
+# print(message_lst + list('freind')) #Combine two lists together with a '+' sign
 
 
 #Slide 8
 ##This example allows you to add people to a roster by looping through the number of people that get added
 # roster_size = int(input("Enter the number of people to add: ")) #Get input about number
-# roster_lst = pass #Create an empty list to hold the people
-#
-# pass: #Loop through however many people we said we wanted to add
+# roster_lst = [] #Create an empty list to hold the people
+# #
+# for i in range(roster_size): #Loop through however many people we said we wanted to add
 #     new_member = input("What is the new members name? ") #Get the persons name
-#     pass #Add the person to the end of the roster list
-#
-# print(pass) #print results
+#     roster_lst.append(new_member) #Add the person to the end of the roster list
+# #
+# print(roster_lst) #print results
 
 
 ##This example generates n random numbers between 1 and 365 and puts them into a list
 # from random import randint
 # number_lst = [] #empty list to hold numbers
 # n = 21 #How much elements to put in the list
-
-# pass
-#     pass #Choose random number
-#     pass #append that number to list
-# print(pass)
+#
+# for i in range(n):
+#     number = randint(1,365)#Choose random number
+#     number_lst.append(number) #append that number to list
+#
+# print(number_lst)
+# number_lst = set(number_lst)
+# print(number_lst)
+# print(len(number_lst))
 
 
 
@@ -68,21 +86,27 @@
 
 
 #Slide 12 - Different operations and list slicing techniques that are possible
-# first = [1,2,3,4]
-# print(len(first))
-# print(first[0])
-# print(pass)
-# first = pass
-#
+first = [1,2,3,4]
+print(len(first))
+print(first[0])
+print(first[2:4])
+first = first + [5,
+                 6
+                 ]
+
+print(first)
 #
 # second = list(range(1,7))
-# print(pass)
-# print(pass) #Why do you think the 'is' keyword returns False here?
+# print(second)
+# print(first == second) #True because elements are not the same
+# print(first is second) #False because not the same place in memory
+
 
 ##Searching through a list
-# print(pass)
-# print(pass)
-# print(pass)
+print(1 in first) # find an element in a list, TRUE
+print('1' in first) # FALSE
+print(int('1') in first) # TRUE
+print(str(1) in first) # FALSE
 
 # import random
 # csci102_Roster = ['Osvaldo', 'Serena', 'Stephen', 'Garret', 'Miguel', 'Antonio', 'Conder', 'Jay', 'Jaden', 'Angel',

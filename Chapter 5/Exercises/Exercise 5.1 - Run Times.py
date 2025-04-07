@@ -12,3 +12,4 @@ At that point the program calculates and returns the average 1-mile time from th
 See example Input and output in Canvas for hpw the interaction with the program should be structured
 """
 #YOUR SOLUTION HERE
+
