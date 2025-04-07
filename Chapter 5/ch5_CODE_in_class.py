@@ -102,7 +102,7 @@ print(first)
 # print(first is second) #False because not the same place in memory
 
 
-##Searching through a list
+## Searching through a list
 print(1 in first) # find an element in a list, TRUE
 print('1' in first) # FALSE
 print(int('1') in first) # TRUE
