@@ -86,15 +86,15 @@ import random
 
 
 #Slide 12 - Different operations and list slicing techniques that are possible
-first = [1,2,3,4]
-print(len(first))
-print(first[0])
-print(first[2:4])
-first = first + [5,
-                 6
-                 ]
-
-print(first)
+# first = [1,2,3,4]
+# print(len(first))
+# print(first[0])
+# print(first[2:4])
+# first = first + [5,
+#                  6
+#                  ]
+#
+# print(first)
 #
 # second = list(range(1,7))
 # print(second)
@@ -103,74 +103,86 @@ print(first)
 
 
 ## Searching through a list
-print(1 in first) # find an element in a list, TRUE
-print('1' in first) # FALSE
-print(int('1') in first) # TRUE
-print(str(1) in first) # FALSE
+# print(1 in first) # find an element in a list, TRUE
+# print('1' in first) # FALSE
+# print(int('1') in first) # TRUE
+# print(str(1) in first) # FALSE
 
-# import random
-# csci102_Roster = ['Osvaldo', 'Serena', 'Stephen', 'Garret', 'Miguel', 'Antonio', 'Conder', 'Jay', 'Jaden', 'Angel',
-#                   'Melissa', 'Jaycen', 'Anthony', 'DaSean', 'Esteffan', 'Jeffery', 'Nicolas', 'Nguyen', 'Richy',
-#                   'Gabriel', 'Jon', 'Vinnie', 'Ray']
-# random_student = pass
-# print(pass)
-# print(pass)
 #
-# print(pass} extra credit points go to {random_student}')
+# import random
+csci102_Roster = ['Osvaldo', 'Serena', 'Stephen', 'Garret', 'Miguel', 'Antonio', 'Conder', 'Jay', 'Jaden', 'Angel',
+                  'Melissa', 'Jaycen', 'Anthony', 'DaSean', 'Esteffan', 'Jeffery', 'Nicolas', 'Nguyen', 'Richy',
+                  'Gabriel', 'Jon', 'Vinnie', 'Ray']
+# random_student = random.choice(csci102_Roster)
+# print(random_student)
+# print('Bob' in csci102_Roster) # False
+# #
+# print(f'{random.randint(-10,10)} extra credit points go to {random_student}')
 
 
 ##Slide 13 - Changing elements in a list
 # first = [1,2,3,4]
-# pass
+# first[0] = 5
 # print(first)
-
-# pass
-# print(pass)
+#
+# csci102_Roster[0] = 'Taylor Swift'
+# print(csci102_Roster)
 
 
 ##Slide 14 - Manipulating through looping
 # numbers = [2,3,4,5]
-# pass
-#     pass
+# for i in range(len(numbers)): # Looping using the index of the list
+#     numbers[i] = numbers[i] ** 2
 # print(numbers)
+#
+# n_lst = []
+# for number in numbers:
+#     n_lst.append(number**2)
+# print(n_lst)
 
 # sentence = "Python is a good beginner programming language"
 # sentence = sentence.split() #Split into individual words and make a list
+# print(sentence)
 # print(f"The sentence is {len(sentence)} words.")
-
-#pass #Loop through each element by index
-#     pass #Change each word to upper case and save it into the same position
+#
+# for i in range(len(sentence)): #Loop through each element by index
+#     sentence[i] = sentence[i].upper() #Change each word to upper case and save it into the same position
 # print(sentence)
 
 
-##Slide 15 - adding elements by index
-# pass
-# pass
-# print(csci102_Roster)
+##Slide 15 - adding elements by index, without replacing data
+csci102_Roster.insert(1, "Adam Sandler")
+print(csci102_Roster)
+csci102_Roster.insert(3, "Soulja Boy")
+print(csci102_Roster)
 
-# pass
-# print(csci102_Roster)
+new_students = ['Larry', 'Curly', 'Moe']
+csci102_Roster.extend(new_students)
+csci102_Roster = csci102_Roster + new_students # Does the same thing as the line above
 
-
-# new_students = ['Larry', 'Curley', 'Moe']
-# pass
-# print(csci102_Roster)
 
 ##Slide 16 - removing elements
-# pass
-# print(last_person)
+print(csci102_Roster[-1])
+last_person = csci102_Roster.pop()
+print(last_person)
 #
-# pass
-# print(first_person)
-#
-# print(csci102_Roster)
+first_person = csci102_Roster.pop(0)
+print(first_person)
+
 
 ##Remove an element using its name
-# pass
-# pass
-# print(pos, new_freind)
+some_person = csci102_Roster.index("Stephen")
+print(some_person)
 
-##Slide 19 - searching and sorting
+if 'DaSean' in csci102_Roster:
+    other_person = csci102_Roster.index("DaSean")
+    print(other_person)
+    best_student = csci102_Roster.pop(other_person)
+    print(best_student)
+else:
+    print('Bob is not ont he list')
+
+##Slide 20 - searching and sorting
 ##Building a list from conditions in another list (numbers greater then 15)
 # from random import randint
 #
@@ -185,7 +197,7 @@ print(str(1) in first) # FALSE
 #
 # print(new_lst)
 
-##Slide 20
+##Slide 21
 ##Given a list of 20 random integers between 1 and 20, create a new list of all integers that appear more then once.
 # from random import randint
 #
@@ -217,7 +229,7 @@ print(str(1) in first) # FALSE
 #
 # print(new_lst)
 
-##Slide 21 - Sorting a list
+##Slide 22 - Sorting a list
 # lst = [4,10,2,1,7]
 #
 # pass
@@ -235,7 +247,7 @@ print(str(1) in first) # FALSE
 
 
 
-##Slide 23 - Intro to Tuples
+##Slide 24 - Intro to Tuples
 # cards = pass #Empty tuple container
 # cards = (6,7,8,9,10,'Jack') #Tuples of card ranks
 # cards = ((2,'hearts'), (8, 'spades'), ('Ace', 'Clubs')) #Tuple of tuples
@@ -248,7 +260,7 @@ print(str(1) in first) # FALSE
 # print(cars)
 
 
-##SLide 25
+##SLide 26
 ###Building a deck of cards by combining tuples
 # import random
 #
@@ -264,16 +276,16 @@ print(str(1) in first) # FALSE
 #
 # print(deck)
 
-##Slide 26 (IN_CLASS_TUPLE PRACTICE)
+##Slide 27 (IN_CLASS_TUPLE PRACTICE)
 
 
-##Slide 28
+##Slide 29
 ##Defining a simple function
 
 
 
 
-##Slide 29
+##Slide 31
 ##Pass arguments into a function (no limit on amount or data type)
 
 
@@ -281,7 +293,7 @@ print(str(1) in first) # FALSE
 
 
 
-##Slide 30
+##Slide 32
 ##Pass default values into a function (order of keyword parameters vs. positional parameters matters!)
 ##positional parameters need to be defines FIRST!
 
@@ -292,7 +304,7 @@ print(str(1) in first) # FALSE
 """Write a function called find_bigger that accepts two decimal number and returns the bigger of the two"""
 
 
-##Slide 31
+##Slide 33
 """Write a function named only_ints that takes two parameters.
 Your function should return True if both parameters are integers, and False otherwise."""
 
@@ -302,7 +314,7 @@ Your function should return True if both parameters are integers, and False othe
 
 
 
-# ##Slide 32
+# ##Slide 34
 ##Write a function that removes digits from a string and returns it back with only alphabetic characters.
 
 
@@ -310,7 +322,7 @@ Your function should return True if both parameters are integers, and False othe
 
 
 
-##Slide 33
+##Slide 35
 ##Write a function that accepts an integer and returns the sum of its digits
 
 
