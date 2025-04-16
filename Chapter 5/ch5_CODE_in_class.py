@@ -151,36 +151,36 @@ csci102_Roster = ['Osvaldo', 'Serena', 'Stephen', 'Garret', 'Miguel', 'Antonio',
 
 
 ##Slide 15 - adding elements by index, without replacing data
-csci102_Roster.insert(1, "Adam Sandler")
-print(csci102_Roster)
-csci102_Roster.insert(3, "Soulja Boy")
-print(csci102_Roster)
-
-new_students = ['Larry', 'Curly', 'Moe']
-csci102_Roster.extend(new_students)
-csci102_Roster = csci102_Roster + new_students # Does the same thing as the line above
+# csci102_Roster.insert(1, "Adam Sandler")
+# print(csci102_Roster)
+# csci102_Roster.insert(3, "Soulja Boy")
+# print(csci102_Roster)
+#
+# new_students = ['Larry', 'Curly', 'Moe']
+# csci102_Roster.extend(new_students)
+# csci102_Roster = csci102_Roster + new_students # Does the same thing as the line above
 
 
 ##Slide 16 - removing elements
-print(csci102_Roster[-1])
-last_person = csci102_Roster.pop()
-print(last_person)
-#
-first_person = csci102_Roster.pop(0)
-print(first_person)
+# print(csci102_Roster[-1])
+# last_person = csci102_Roster.pop()
+# print(last_person)
+# #
+# first_person = csci102_Roster.pop(0)
+# print(first_person)
 
 
 ##Remove an element using its name
-some_person = csci102_Roster.index("Stephen")
-print(some_person)
-
-if 'DaSean' in csci102_Roster:
-    other_person = csci102_Roster.index("DaSean")
-    print(other_person)
-    best_student = csci102_Roster.pop(other_person)
-    print(best_student)
-else:
-    print('Bob is not ont he list')
+# some_person = csci102_Roster.index("Stephen")
+# print(some_person)
+#
+# if 'DaSean' in csci102_Roster:
+#     other_person = csci102_Roster.index("DaSean")
+#     print(other_person)
+#     best_student = csci102_Roster.pop(other_person)
+#     print(best_student)
+# else:
+#     print('Bob is not ont he list')
 
 ##Slide 20 - searching and sorting
 ##Building a list from conditions in another list (numbers greater then 15)
@@ -200,94 +200,145 @@ else:
 ##Slide 21
 ##Given a list of 20 random integers between 1 and 20, create a new list of all integers that appear more then once.
 # from random import randint
-#
+# #
 # lst = []
 # for i in range(20):
 #     lst.append(randint(1,20))
-#
+# print(lst)
+
 # new_lst = []
-# pass
-#     pass
-#         pass
-#
-# print(pass)
-# print(pass)
+# for number in lst:
+#     if lst.count(number) > 1:
+#         if number not in new_lst:
+#             new_lst.append(number)
+
+# new_lst = set(new_lst)
+# print(sorted(lst))
+# print(sorted(new_lst))
 
 ##Given TWO lists of random numbers between 1 and 20 create a new list that has the common elements of both lists
 # lst2 = []
 # for i in range(20):
 #     lst2.append(randint(1,20))
-#
+# #
 # print(lst)
 # print(lst2)
-#
+# #
 # new_lst = []
-# pass
-#     pass
-#         pass
-#         pass
-#
+# for number in lst:
+#     if number in lst2:
+#         new_lst.append(number)
+#         lst2.pop(lst2.index(number))
+# #
 # print(new_lst)
+
 
 ##Slide 22 - Sorting a list
 # lst = [4,10,2,1,7]
+# #
 #
-# pass
+# lst.sort()
+# lst.sort(reverse=True)
 # print(lst)
-#
+
+
+# letters = ['c', 'h', 'b', 'A', 'M', 'B']
+# letters.sort()
+# print(letters)
+# print(ord('A'), ord('a'))
+
 # lst2 = [4,10,2,1,7]
 #
-# print(pass) # This returns the list sorted in numeric order
+# sorted(lst2) # This returns the list sorted in numeric order
 # print(lst2) #Notice that this returns the original list - not the sorted one
-#
-# lst3 = pass
+# #
+# lst3 = sorted(lst2)
 # print(lst3)
 #
-# print(pass)
+
 
 
 
 ##Slide 24 - Intro to Tuples
-# cards = pass #Empty tuple container
+# cards = () #Empty tuple container
+# print(type(cards))
 # cards = (6,7,8,9,10,'Jack') #Tuples of card ranks
-# cards = ((2,'hearts'), (8, 'spades'), ('Ace', 'Clubs')) #Tuple of tuples
+# cards_full = ((2,'hearts'), (8, 'spades'), ('Ace', 'Clubs')) #Tuple of tuples
 # cars = ([2020, 'Chevy', 'Corvette'], [2023, 'Toyota', 'Prius']) #Tuple of lists
-
-
-# pass #Demonstrates you can't modify a tuple like you can a list
-
-# pass #Since the third element [2] in the first tuple is a list, it can be modified. We are not modifying the tuple itself
+#
+# print(cards[3])
+# print(cards_full[1])
+# print(cars[1])
+# cards = list(cards) # If we change the cards tuple to a list we can do the line below
+# cards[0] = 'Ace' #Demonstrates you can't modify a tuple like you can a list, unless you run the line above
+#
+# cars[1][2] = 'Rav-4' #Since the third element [2] in the first tuple is a list, it can be modified. We are not modifying the tuple itself
 # print(cars)
 
 
 ##SLide 26
-###Building a deck of cards by combining tuples
-# import random
+### Building a deck of cards by combining tuples
+import random
 #
-# suit_tuple= ('hearts', 'diamomds', 'spades', 'clubs')
+# suit_tuple = ('hearts', 'diamomds', 'spades', 'clubs')
 # rank_tuple = ('2', '3', '4', '5', '6', '7', '8','9', '10', 'jack', 'queen', 'king', 'ace')
-#
+# #
 # deck = []
-# pass
-#     pass
-#         pass #Temporary variable to store the current card in loop
-#         pass #Add this card to the deck list
-#         pass
-#
+# for suit in suit_tuple:
+#     for rank in rank_tuple:
+#         card = (rank, suit) #Temporary variable to store the current card in loop
+#         # print(card) # Show the card for debugging
+#         deck.append(card) #Add this card to the deck list
+
+# print(len(deck))
 # print(deck)
+# random.shuffle(deck)
+# print(deck)
+#
+# print(random.choice(deck))
+
 
 ##Slide 27 (IN_CLASS_TUPLE PRACTICE)
+# point1 = (2,6)
+# point2 = (-9,-10)
+#
+# x1 = point1[0]
+# y1 = point1[1]
+#
+# x2 = point2[0]
+# y2 = point2[1]
+#
+# slope = (y2-y1)/(x2-x1)
+# print(round(slope,2))
+#
+# slope_alt = (point2[1] - point1[1])/(point2[0] - point1[0])
+# print(slope_alt)
 
 
 ##Slide 29
 ##Defining a simple function
+# def greeting():
+    # return 'Hi everybody'
+    # print('Hi Everybody')
 
+# print(greeting()) # Need parenthesis to trigger the function
+# say_hello = greeting()
+# print(say_hello, type(say_hello))
 
-
+# greeting()
+# print(greeting())
 
 ##Slide 31
 ##Pass arguments into a function (no limit on amount or data type)
+# def greeting(first_name, last_name): # first name and last name are considered POSITIONAL arguments
+#     data = f"Call me {last_name}, {first_name}, {last_name}"
+#     return data
 
+# message = greeting('James', 'Bond')
+# print(message)
+
+# message = greeting() # If you call a function that expects parameters but does not get them, you get an ERROR
+# print(message)
 
 
 
@@ -296,9 +347,34 @@ else:
 ##Slide 32
 ##Pass default values into a function (order of keyword parameters vs. positional parameters matters!)
 ##positional parameters need to be defines FIRST!
+# def greeting(first_name = 'John', last_name = 'Doe'): # These are KEYWORD Parameters
+#     data = f"Call me {last_name}, {first_name}, {last_name}"
+#     return data
+#
+# message = greeting() # Returns the default parameters
+# print(message)
+#
+# message = greeting('James')
+# print(message)
+#
+# message = greeting(last_name='James')
+# print(message)
+#
+# message = greeting('James', "Bond")
+# print(message)
 
 
+## Using BOTH POSITIONAL and KEYWORD
+# def greeting(first_name, last_name = 'Doe'): # These are KEYWORD Parameters
+#     data = f"Call me {last_name}, {first_name}, {last_name}"
+#     return data
+#
+# message = greeting('James')
+# print(message)
 
+# def greeting(first_name = "John", last_name): # ERROR because POSITIONAL comes before KEYWORD
+#     data = f"Call me {last_name}, {first_name}, {last_name}"
+#     return data
 
 ##Try it:
 """Write a function called find_bigger that accepts two decimal number and returns the bigger of the two"""
