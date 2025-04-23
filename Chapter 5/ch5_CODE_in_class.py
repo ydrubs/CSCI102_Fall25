@@ -378,12 +378,28 @@ import random
 
 ##Try it:
 """Write a function called find_bigger that accepts two decimal number and returns the bigger of the two"""
+# def find_bigger(a,b):
+#     if a > b:
+#         return a
+#     return b
+#
+# compare = find_bigger(2.17, 3.14)
+# print(compare)
 
 
 ##Slide 33
 """Write a function named only_ints that takes two parameters.
 Your function should return True if both parameters are integers, and False otherwise."""
+# print('3'.isnumeric()) # Returns True only is a string is a valid integer
 
+# def only_ints(a, b):
+#     if str(a).isnumeric() and str(b).isnumeric():
+#         return True
+#     else:
+#         return False
+#
+# result = only_ints(1, 3.14)
+# print(result)
 
 
 
@@ -391,18 +407,32 @@ Your function should return True if both parameters are integers, and False othe
 
 
 # ##Slide 34
-##Write a function that removes digits from a string and returns it back with only alphabetic characters.
-
-
-
+## Write a function that removes digits from a string and returns it back with only alphabetic characters.
+# def remove_digits(word):
+#     new_word = ""
+#     for char in word:
+#         if not char.isnumeric():
+#             new_word +=char
+#
+#     return new_word
+#
+# message = input("Enter a message")
+# no_numbers = remove_digits(message)
+# print(no_numbers)
 
 
 
 ##Slide 35
 ##Write a function that accepts an integer and returns the sum of its digits
+def sum_digits(number):
+    number = list(str(number))
+    sum = 0
+    for digit in number:
+        sum += int(digit)
 
+    return sum
 
-
+print(sum_digits(123))
 
 
 
@@ -410,15 +440,3 @@ Your function should return True if both parameters are integers, and False othe
 ###########Extra Example
 """Write a function that takes an integer and returns all integers within a range whose sum of digits is equal to the integer passed in.
 For example if 11 is passed in then 29,38,47,etc.. are returned because 2+9=11, 3+8=11, etc..."""
-
-# def sum_digits(number):
-#     for i in range(10,200):
-#         current_number = list(str(i))
-#         # print(current_number)
-#         sum = 0
-#         for digit in current_number:
-#             sum += int(digit)
-#             if sum == number:
-#                 print(i)
-#
-# sum_digits(11)
