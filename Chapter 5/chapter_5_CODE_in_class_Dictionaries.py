@@ -1,26 +1,26 @@
-##Slide 2
+##Slide 3
 people = {'Jon': 'Lawyer', 'Susan': 'Programmer', 'Robert': 'Bank Manager', 'Tanya': 'Engineer'}
 
 
-##SLide 3
+##SLide 4
 # pass #This will give an error because dictionaries are not ordered (can't access by index)
 
 
 # people = {'Jon': 'Lawyer', 'Susan': 'Programmer', 'Robert': 'Bank Manager', 'Tanya': 'Engineer', 'Jon':'Teacher'}
 # print(people)
 
-##Slide 4
+##Slide 5
 # fords = {'Ford': 'Mustang', 'Ford': 'Fusion', 'Ford': 'F150', }
 # print(fords)
 
-##Slide 5
+##Slide 6
 # import pass
 
 # pass #Genearte a fake_id
 # pass #Get a profile information from the fake id data set
 # pass
 
-##Slide 6
+##Slide 7
 # print(pass) ##Access the value corresponding to a key
 # print(pass) #Gives an error because age is not a key in the dictionary
 
@@ -28,12 +28,12 @@ people = {'Jon': 'Lawyer', 'Susan': 'Programmer', 'Robert': 'Bank Manager', 'Tan
 # print(pass)
 
 
-##Slide 7
+##Slide 8
 # print(pass)
 # print(pass)
 # print(pass)
 
-##Slide 8
+##Slide 9
 #Loop all the keys
 
 
@@ -47,7 +47,7 @@ people = {'Jon': 'Lawyer', 'Susan': 'Programmer', 'Robert': 'Bank Manager', 'Tan
 
 
 
-##Slide 9
+##Slide 10
 #Add entries to a dictionary
 
 
@@ -58,12 +58,12 @@ people = {'Jon': 'Lawyer', 'Susan': 'Programmer', 'Robert': 'Bank Manager', 'Tan
 
 
 
-##Slide 10 - Your turn
+##Slide 11 - Your turn
 # me = {}
 # me['name'] = 'my_name'
 
 
-##Slide 11
+##Slide 12
 #Given a list of classes and a list of grades create a dictionary that links the data together
 # courses = ['Trigonometry', 'Physics', 'Programming', 'English 2']
 # grades = [85, 94, 98, 80]
@@ -82,12 +82,12 @@ people = {'Jon': 'Lawyer', 'Susan': 'Programmer', 'Robert': 'Bank Manager', 'Tan
 
 
 
-##Slide 12
+##Slide 13
 # my_string = 'Hello, how are you'
 
 
 
-##Slide 13 - Practice 1
+##Slide 14 - Practice 1
 """Your task:Create a new dictionary that removes ‘ssn’, ‘blood_group’, and ‘birthdate’ from the previous dictionary and moves 
 it into the new dictionary. Write the new dictionary into a variable called ‘private_data’
 """
@@ -102,7 +102,7 @@ print(profile)
 
 
 
-##Slide 14 - Practice 2 (Optional Challenge
+##Slide 15 - Practice 2 (Optional Challenge
 '''Your Task: Create a new dictionary that contains only the dictionary entries that are greater then 50.  
 Start with the code below that generates a random numbers between 1 and 100 for every letter of the alphabet.
 Then write a script that creates a new dictionary with key-value that have the value data greater then 50.'''
