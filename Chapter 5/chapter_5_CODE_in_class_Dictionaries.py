@@ -1,9 +1,11 @@
 ##Slide 3
-people = {'Jon': 'Lawyer', 'Susan': 'Programmer', 'Robert': 'Bank Manager', 'Tanya': 'Engineer'}
-
+# people = {'Jon': 'Lawyer', 'Susan': 'Programmer', 'Robert': 'Bank Manager', 'Tanya': 'Engineer', 'Conder': 'Student'}
+# print(people)
+# print(type(people))
 
 ##SLide 4
-# pass #This will give an error because dictionaries are not ordered (can't access by index)
+# print(people[0]) #This will give an error because dictionaries are not ordered (can't access by index)
+# print(people['Susan']) # This will return the value
 
 
 # people = {'Jon': 'Lawyer', 'Susan': 'Programmer', 'Robert': 'Bank Manager', 'Tanya': 'Engineer', 'Jon':'Teacher'}
@@ -14,31 +16,38 @@ people = {'Jon': 'Lawyer', 'Susan': 'Programmer', 'Robert': 'Bank Manager', 'Tan
 # print(fords)
 
 ##Slide 6
-# import pass
+# We need to install the 'Faker' library first
+import faker # Import faker
 
-# pass #Genearte a fake_id
-# pass #Get a profile information from the fake id data set
-# pass
+fake_id = faker.Faker() #Genearte a fake_id
+profile = fake_id.profile() #Get a profile information from the fake id data set
+# print(dir(fake_id))
+# print(fake_id.ssn())
+
+print(profile)
 
 ##Slide 7
-# print(pass) ##Access the value corresponding to a key
-# print(pass) #Gives an error because age is not a key in the dictionary
+# print(profile['job']) ##Access the value corresponding to a key
+# print(profile['age']) #Gives an error because age is not a key in the dictionary
 
-# print(pass)
-# print(pass)
+# You can also use .get to access values
+# print(profile.get('job'))
+# print(profile.get('age'))
 
 
 ##Slide 8
-# print(pass)
-# print(pass)
-# print(pass)
+# print(profile.keys()) # Returns all the keys of the dictionary
+# print(profile.values()) # Returns only the values
+# print(profile.items())
 
 ##Slide 9
 #Loop all the keys
-
+# for key in profile.keys():
+#     print(key)
 
 #Loop all the values
-
+for value in profile.values():
+    print(value)
 
 
 
@@ -97,7 +106,7 @@ profile = {'job': 'Clinical embryologist', 'company': 'Garcia and Sons', 'ssn': 
            'website': ['https://wade-williams.com/', 'http://flores.com/'], 'username': 'arroyosusan',
            'name': 'Donna Gonzalez', 'sex': 'F', 'address': '8086 Warner Inlet Suite 223 New Jack, WI 37965',
            'mail': 'milesjessica@yahoo.com', 'birthdate': (1922, 1, 30)}
-print(profile)
+# print(profile)
 
 
 
