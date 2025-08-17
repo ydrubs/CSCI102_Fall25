@@ -1,8 +1,6 @@
 ### Slide 5 - Simple Hello World Program
 
 
-
-
 ###Slide 15 - Data types
 
 
