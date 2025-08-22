@@ -1,8 +1,22 @@
 ### Slide 5 - Simple Hello World Program
+#print("Hello world")
+#greet = "How is your day"
+#print(greet)
 
+#print(id(greet))
 
 ###Slide 15 - Data types
+hello = 'hello'
+print(type(hello))
 
+number = 150
+print(type(number))
+
+a_bool = True
+print(type(a_bool))
+
+hello = number
+print(type(hello))
 
 
 
