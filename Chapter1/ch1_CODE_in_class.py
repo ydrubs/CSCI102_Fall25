@@ -19,9 +19,6 @@ hello = number
 print(type(hello))
 
 
-
-
-
 ###Slide 17 - Getting Input
 
 
