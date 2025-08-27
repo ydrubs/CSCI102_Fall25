@@ -62,22 +62,30 @@
 
 
 ###Slide 22 Outputting multiple data
-name = input("Enter your name: ")
-age = int(input("Enter your age: "))
+# name = input("Enter your name: ")
+# age = int(input("Enter your age: "))
 
 
-print('Hello',name,'you are',age,'years old.') # Using commas to seperate data
-print('Hello ' + name,' you are ' + str(age),'years old.') # Using + to concatenate data into one string
-pass # Using f-strings
+# print('Hello',name,'you are',age,'years old.') # Using commas to seperate data
+# print('Hello ' + name,' you are ' + str(age),'years old.') # Using + to concatenate data into one string
+
+# print(f"Hello, {name}, you are {age + 1} years old") # Using f-strings
 
 
 
 ###Slide 23 Operations
+a = int(input("first number: ")) # Suppose 7
+b = int(input("Second number: ")) # Suppose 4
 
 
-pass # Regular division, always a FLOAT
-pass # Quotient division
+# print(a + b) # you'll get 11
+# print(a - b) # 3
+# print(a * b) # 28
+#
+# print(a/b) # Regular division, always a FLOAT
+# print(a//b) # Quotient division, always an integer rounded down
 
+print(a % b)# Modulus
 
 ##Slide 28
 ##Run-Time error - Program stops execution when it encounters an error
