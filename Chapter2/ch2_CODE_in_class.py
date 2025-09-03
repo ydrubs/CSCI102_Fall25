@@ -8,18 +8,15 @@ age = 115 # age of the oldest ever living person
 # # give the age of the person
 # print(age)
 
-"""Sometimes there is a need to explain or document a portrion of code beyond one line.
+"""
+Sometimes there is a need to explain or document a portrion of code beyond one line.
 For this we can use a docstring to extend to multiple lines.
-Docstrings are also used to attribute programs and explain functions."""
-
-## Slide 4 - code literals
-
-
-
-
+Docstrings are also used to attribute programs and explain functions.
+"""
 
 ##Slide 5 - place value representation
-
+a = 423_192_374_983_274
+print(a, type(a))
 
 
 
