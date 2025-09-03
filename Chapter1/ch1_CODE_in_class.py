@@ -74,8 +74,8 @@
 
 
 ###Slide 23 Operations
-a = int(input("first number: ")) # Suppose 7
-b = int(input("Second number: ")) # Suppose 4
+# a = int(input("first number: ")) # Suppose 7
+# b = int(input("Second number: ")) # Suppose 4
 
 
 # print(a + b) # you'll get 11
@@ -85,17 +85,19 @@ b = int(input("Second number: ")) # Suppose 4
 # print(a/b) # Regular division, always a FLOAT
 # print(a//b) # Quotient division, always an integer rounded down
 
-print(a % b)# Modulus
+# print(a % b)# Modulus
+
+
 
 ##Slide 28
 ##Run-Time error - Program stops execution when it encounters an error
 # length = int(input("Enter the length: "))
-# print(legnth) # Stops execution HERE
+# print{legnth}
 
 
 ##Syntax Error - Program does not execute at all
 # length = int(input("Enter the length: "))
-# print{legnth} # SYNTAX ERROR Here
+# print(legnth) # SYNTAX ERROR Here
 
 
 ##Sementic Error
@@ -104,17 +106,21 @@ print(a % b)# Modulus
 
 
 ##Slide 29
- # print("Hello")
+ # print('Hello")
+
+# print("A famous quote is this \"Wazzzzuuup\"")
 
 
 # a = 2
 # b = 3
-# print(a +)
+# print("here")
+# print(a + 'b')
 
 
 ##Slide 30
 ##Traceback
-# def say(name):
-#     print('Hello, ' + nam)
-#
-# say('Michael')
+def say(name):
+    print('Hello, ' + nam)
+
+# print(id(say))
+say('Logan')
