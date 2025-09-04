@@ -21,7 +21,6 @@ print(a, type(a))
 
 
 
-
 ##Slide 7 - String literals
 pass # use double quotes of a single quote is part of the string
 
