@@ -15,55 +15,46 @@ Docstrings are also used to attribute programs and explain functions.
 """
 
 ##Slide 5 - place value representation
-a = 423_192_374_983_274
-print(a, type(a))
+# a = 423_192_374_983_274
+# print(a, type(a))
 
 
 
 
 ##Slide 7 - String literals
-pass # use double quotes of a single quote is part of the string
+# print("hello there")
+# print('hello there') # Both are the same
 
-## Often the choice of single or double quote does not matter
-# print("A double quoted string")
-# print('does the same thing as a single quoted string')
-
-# print("However, there'll be times when a string needs to include a single quote within it, so a double quote is useful.")
-
-
-## Multiline strings look similar to docstrings
-# welcomeText = '''Welcome to my game!
-# I will think of a number from 1 to 100, and you must try
-# to guess it. I'll tell you if your guess is too small
-# or too large.
-
-# Enter an integer between 1 and 100 when prompted.'''
-
-
-# print(welcomeText)
+# print('That's awesome) #Gives an error because an apostr. is part of the string
+# print("That's awesome") # This fixes the problem, woohoo
+# print('That\'s awesome') # This also fixes it
 
 
 ##Slide 8 - Escape characters
-# print('Hello. How are you?')
+# print('Hello. \n\tHow \n\t\tare \n\t\t\tyou?')
 #
 # print("1. hello " + 'there') #Substitute one of the escape chars for the '#'
-# print("2. hello# " + ' there')
-# print("3. hello# " + ' there')
-# print("4. hello# " + ' there')
-# print("5. hello# " + ' there')
-# print("6. hello#' " + ' there')
-# print("7.hello# " + ' there')
+# print("2. hello\b " + ' there')
+# print("3. hello\n " + ' there') #\n this is the one most used
+# print("4. hello\t " + ' there')
+# print("5. hello\\ " + ' there')
+# print("6. hello\' " + ' there')
+# print("7.hello\" " + ' there')
 
 
 
 
 ##Slide 10 - End of line arguments
-# print("Hello")
+# import time
+# print("Hello", end = "**")
+# time.sleep(1)
 # print("there")
-
-
-
-
+# time.sleep(1)
+# print('How')
+# time.sleep(1)
+# print('are')
+# time.sleep(1)
+# print('you')
 
 
 ##Slide 11 - separator arguments
@@ -72,17 +63,29 @@ pass # use double quotes of a single quote is part of the string
 # home_planet = 'Dagobah'
 
 ## using sep
+# print(name, age, home_planet)
+# print(name, age, home_planet, sep = '\n')
 
+# print(name + str(age) + home_planet, 'woot', sep = '**')
 
 ##  combine sep and end
-
+# print(name, age, home_planet, sep = '**', end = ' tacos ')
+# print("The end")
 
 ###Activity from slide 13
-## Three valid Variables
-
+## Five valid Variables
+# HITHERE = 'hello'
+# hithere = 'hello'
+# hi_there = 'hello' # this one is good convention
+# _hi_there = 'hello'
+# hi123 = 'hello'
 
 ## Three Invalid variables
+# 1hi_there = 'hello' # can't START with a number, boo
+# if = 'then' #Can't use reserved words
+# hi! = 'hello' # can't use special character (including space)
 
+## ACTIVITY
 
 
 ##Slide 14 - variable assignment through concatenation
@@ -93,16 +96,18 @@ pass # use double quotes of a single quote is part of the string
 
 
 ## Reassigning Variables to new values
-# x = 125
-pass    # y defined in terms of x
+x = 125
+y = x / 5
+print(x, y)# y defined in terms of x
 
 
-pass   # redefining x
+x = 100   # redefining x
+print(x, y)
 
 
 
-pass   # redefining y by modifying
-
+y = 2 * y   # redefining y by modifying
+print(x, y)
 
 
 ##Slide 15 - Review Concatenation vs. comma seperation
