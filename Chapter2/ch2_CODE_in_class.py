@@ -97,53 +97,47 @@ Docstrings are also used to attribute programs and explain functions.
 
 ## Reassigning Variables to new values
 x = 125
-y = x / 5
-print(x, y)# y defined in terms of x
-
-
-x = 100   # redefining x
-print(x, y)
-
-
-
-y = 2 * y   # redefining y by modifying
-print(x, y)
+# y = x / 5
+# print(x, y)# y defined in terms of x
+#
+#
+# x = 100   # redefining x
+# print(x, y)
+#
+#
+#
+# y = 2 * y   # redefining y by modifying
+# print(x, y)
 
 
 ##Slide 15 - Review Concatenation vs. comma seperation
 # first_name = "Yuriy"
 # last_name = "Drubinskiy"
-
-pass # Concatenation
-pass # comma seperated arguments
+#
+# print(first_name + ' ' + last_name, sep = '**', end = ' :) ') # Concatenation
+# print(first_name, last_name, sep = '**') # comma seperated arguments
 
 
 ## Slide 16 - The * string operation
-s1 = 'waaz'
-s2 = 'a'
-s3 = 'p'
-
-
+# s1 = 'waaz'
+# s2 = 'a'
+# s3 = 'p'
+#
+# print(s1 + s2 * 5 + s3)
+# print((s1 + s2 * 5 + s3 + '\n') * 3)
 
 
 
 ### ACTIVITY slide 17 - Write a print statement that outputs the string seen in slide 17 of the powerpoint
+# print ('^'*10)
+# print ('#'*10)
+# print ('#'*10)
+# print ('#'*10)
+# print ('^'*10)
+
+# print(('^'*10 + '\n') + ('#'*10 + '\n')*3 + ('^'*10))
 
 
-
-##Slide 18 - Examples of math operations
-pass #Exponents
-pass # QUOTIENT
-pass # Modulus (mod)
-pass
-
-pass
-pass
-
-
-
-# a = 1
-pass # Increment and reassign to itself
 
 
 
@@ -151,43 +145,43 @@ pass # Increment and reassign to itself
 ## Slide 20 Mixed-Mode Arithmetic
 # a = 6
 # b = 3
-pass
-pass # True division Results in a float
-pass # Quotient Division rounds down to an int
-
-
-# c = 0.7
-pass # Addition using at least one float always results in a float
-
-
+# c = 5
+# d = 7.1
+# print(a, type(a))
+# print(a/b) # True division Results in a float
+# print(a//c) # Quotient Division rounds down to an int
+#
+# print(a + d)
 
 
 
 #Slide 22 - recasting review
-a = '33'
-b = 5
-c = 4.0
-d = 'one'
 
-pass # int to float
-pass # float to str
-pass # str to int
-pass # str to int - ERROR
-
+# a = 6.1
+# b = 0.1
+# c = a - b # Results in a float (6.0)
+# d = c +1
+# print(d) # Still a float
+# print(int(d))
+#
+# d = str(d)
+# print(d, type(d)) # See 7.0 (but as string)
+#
+#
+# print(float('7.5'))
 
 ## SLide 23 rounding floats
 
 
 
 
-
 ##Slide 24 - Character operations
-# s1 = "Mary"
-# s2 = "Freddy"
+s1 = "Mary"
+s2 = "Freddy"
 
 pass #Get the lenght of string s1 and s2
-pass # Get the ASCII code of the character
-pass #Get the character from the ASCII code
+print(ord('M')) # Get the ASCII code of the character
+print(ord(chr(82+1))) #Get the character from the ASCII code
 pass #Find the smallest and largest ASCII character of s2
 
 
