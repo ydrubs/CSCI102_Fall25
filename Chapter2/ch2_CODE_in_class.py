@@ -171,7 +171,14 @@ x = 125
 # print(float('7.5'))
 
 ## SLide 23 rounding floats
+# a = 3.14159
+#
+# print(round(a, 0))
+# print(round(a, 1))
+# print(round(a, 2))
 
+# b = 1.2345
+# print(f"{a:.2f}")
 
 
 
@@ -180,8 +187,9 @@ s1 = "Mary"
 s2 = "Freddy"
 
 pass #Get the lenght of string s1 and s2
-print(ord('M')) # Get the ASCII code of the character
-print(ord(chr(82+1))) #Get the character from the ASCII code
+print(ord('A')) # Get the ASCII code of the character
+print(chr(65)) #Get the character from the ASCII code
+print(chr(ord("A")+1))
 pass #Find the smallest and largest ASCII character of s2
 
 
@@ -194,6 +202,7 @@ pass #Find the smallest and largest ASCII character of s2
 
 # print('The ASCII code for the letter \'a\' is ' + str(ord('a')))
 
-# for i in range (9000, 10000):
+# for i in range (9000, 100000):
 #     print(chr((i)), end = ', ')
 
+print(int("hello"))
