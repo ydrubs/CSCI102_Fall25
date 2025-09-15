@@ -1,20 +1,38 @@
 ##Slide 5 - One way selection statement
+# name = input("Enter your username: ") # Assign user input to the 'name' variable
 
 
-
-
+# if name == 'admin':
+#     print("Access granted.")
+#
+# print() # Blank line
+# print("Welcome normal person!")
 
 
 #Slide 6 - If/else statement
-
-
-
+# name = input("Enter your username: ") # Assign user input to the 'name' variable
+#
+# if name == 'admin':
+#     print("Access granted.")
+# else:
+#     print("Incorrect username")
+#
+# print("Loser, Caleb like cars!")
 
 
 
 ##Slide 7: Multi-way selection
-# number = int(input('Enter the numeric grade: '))
+number = int(input('Enter the numeric grade: '))
+if number > 89:
+    letter = 'A'
+elif number > 79:
+    letter = 'B'
+elif number > 69:
+    letter = 'C'
+else:
+    letter = 'F'
 
+print(f"The letter grade is {letter}")
 
 
 
