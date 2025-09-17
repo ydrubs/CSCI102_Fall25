@@ -22,18 +22,17 @@
 
 
 ##Slide 7: Multi-way selection
-number = int(input('Enter the numeric grade: '))
-if number > 89:
-    letter = 'A'
-elif number > 79:
-    letter = 'B'
-elif number > 69:
-    letter = 'C'
-else:
-    letter = 'F'
-
-print(f"The letter grade is {letter}")
-
+# number = int(input('Enter the numeric grade: '))
+# if number > 89:
+#     letter = 'A'
+# elif number > 79:
+#     letter = 'B'
+# elif number > 69:
+#     letter = 'C'
+# else:
+#     letter = 'F'
+#
+# print(f"The letter grade is {letter}")
 
 
 
@@ -43,9 +42,23 @@ print(f"The letter grade is {letter}")
 
 
 
-
-
 ##Slide 8 ACTIVITY
+# responce = input("How are you feeling today: ")
+#
+# if responce == 'tired':
+#     print("go to sleep!")
+#     prod_more = input("WHat's wrong")
+#     if prod_more == 'did not sleep':
+#         print("sleep now")
+#     if prod_more == 'in Drubinskiys class':
+#         print('Sorry')
+#
+# elif responce == 'happy':
+#     print("Good for you")
+# elif responce == 'sad':
+#     print("i hope you feel better")
+# else:
+#     print("Well ooooookay")
 
 
 
@@ -53,32 +66,41 @@ print(f"The letter grade is {letter}")
 # x = 10
 # y = 5
 # z = 2
-
+#
+# print(x == y) # FALSE
+# print(x == y + y) # True
+# print(x > y) # True
+# print(x > x/z) # True
+# print(x != y) # True
+# print(y >= x/z) #True
 
 
 
 
 ##Slide 11
-# a = True
-# b = False
+a = True
+b = False
 
-
-
+print(a or (a and b)) # True
+print(b and (a or b)) # False
+print(a and not b or b and not a) # True
 
 
 # #Write your own challening logic statement, make it as long as you want
-# print(a and not b or b and not a or (a and not b)) # True
-
-
-
+print(b or a and not b or a and b and not a or (a and not b)) # True
+print(b or (a == b) and a or not b and a and not b) # True
 
 
 
 ##slide 12 - Evaluating Logic statements
-
-
-
-
+# grade = int(input("What is your grade: "))
+#
+# if grade >=90 and grade < 101:
+#     print('Nice job')
+# elif 90 > grade >= 80:
+#     print('not bad')
+# else:
+#     print("there is room to improve")
 
 
 ## Slide 13 Activity
