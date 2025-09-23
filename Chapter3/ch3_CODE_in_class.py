@@ -78,17 +78,17 @@
 
 
 ##Slide 11
-a = True
-b = False
-
-print(a or (a and b)) # True
-print(b and (a or b)) # False
-print(a and not b or b and not a) # True
-
-
-# #Write your own challening logic statement, make it as long as you want
-print(b or a and not b or a and b and not a or (a and not b)) # True
-print(b or (a == b) and a or not b and a and not b) # True
+# a = True
+# b = False
+#
+# print(a or (a and b)) # True
+# print(b and (a or b)) # False
+# print(a and not b or b and not a) # True
+#
+#
+# # #Write your own challening logic statement, make it as long as you want
+# print(b or a and not b or a and b and not a or (a and not b)) # True
+# print(b or (a == b) and a or not b and a and not b) # True
 
 
 
@@ -110,31 +110,56 @@ print(b or (a == b) and a or not b and a and not b) # True
 
 
 ##Slide 16 - using a for loop
+a = 4
+b = 'hellhksdlkjslkjdhhhhhhhhho'
 
+# for i in range(4): #Count -controlled loop
+#     print(i, b)
+#
+# print('The last loop count was', i)
+# print("The loop ran" , i + 1, 'times')
 
+# for letter in b: # Looping over an iterable
+#     print(letter)
 
 
 ## using a conditional in a for loop
-
+# for letter in b:
+#     if letter != 'h' and letter != 'l':
+#         print(letter)
 
 
 
 ##Slide 18  - Looping through an algorithm
+number = 1
 
+# for i in range(100):
+#     print(number)
+#     number = number + 3
 
-
-
-
+# count = 0
+# while True:
+#     print(count, number)
+#     number = number + 3
+#     count = count + 1
+#
 
 
 ##Slide 19 - Another example
+# n = 1
+# multiply_by = 12
 
-
-
+# print(n)
+# for i in range(5):
+#     print(n)
+#     n = n * multiply_by
+#
+# print(n)
 
 
 ##Slide 20 - Using the loop counter in the loop
-
+# for i in range(10):
+#     print(i + 1 , end = ' ')
 
 
 
@@ -153,12 +178,18 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 20 Mississippi
 """""
 
+# for i in range(21):
+#     print(i, "Mississippi")
 
 
 
 
-##Slide22 - Controlling the loop range
-
+## Slide22 - Controlling the loop range
+# for i in range(1,10): # First number is where the count starts, second number is one less then where it stops
+#     print(i)
+#
+# for i in range(50,101):
+#     print(i)
 
 
 
@@ -166,25 +197,39 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 
 ##SLide 23 - Controlling the loop range; counting by...
 ## Count by threes
-
-
-
+# for i in range(3, 101, 3):
+#     print(i)
+#
+#
+# print()
 
 ## Count backwards from 100
-
+# for i in range(100, 1, -1):
+#     print(i)
 
 
 
 ##Slide 24 - Augmented Assignment
+a = 17
+b = 13
+
+a +=5 # same as a = a + 17
+b -=2 # same as b = b - 2
+print(a, b)
 
 
+c = 2
+d = 3
 
-
+c *=5
+d **=2
+print(c, d)
 
 
 
 ### FIZZ BUZZ Exercise (in-class)
-
+n = 42675
+print(n % 15)
 
 
 
