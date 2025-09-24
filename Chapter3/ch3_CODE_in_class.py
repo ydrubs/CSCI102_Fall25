@@ -210,57 +210,74 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 
 
 ##Slide 24 - Augmented Assignment
-a = 17
-b = 13
-
-a +=5 # same as a = a + 17
-b -=2 # same as b = b - 2
-print(a, b)
-
-
-c = 2
-d = 3
-
-c *=5
-d **=2
-print(c, d)
+# a = 17
+# b = 13
+#
+# a +=5 # same as a = a + 17
+# b -=2 # same as b = b - 2
+# print(a, b)
+#
+#
+# c = 2
+# d = 3
+#
+# c *=5
+# d **=2
+# print(c, d)
 
 
 
 ### FIZZ BUZZ Exercise (in-class)
-n = 42675
-print(n % 15)
+# n = 42675
+# print(n % 15)
 
-
-
-
-
+# for i in range(1,101): #Count - controlled loop
+#     if i%3 == 0 and i%5 == 0:
+#         print("FizzBuzz")
+#     elif i%5 == 0:
+#         print("Fizz")
+#     elif i%3 == 0:
+#         print("Buzz")
+#     else:
+#         print(i)
 
 
 
 
 ##Slide 27 - The while Loop
 """ Ask for a number and add until you hit 1000 """
-
-
-pass # while loop is an entry-controlled loop
-
-
-
+# stop = 1000
+# total = 0
+# step = float(input("Please enter a number: "))
+#
+# while total <= stop: # while loop is an entry-controlled loop
+#     print(total)
+#     total += step # same as total = total + stop
 
 
 ##slide 29 ACTIVITY
-
+# stop = 1000
+# total = 0
+#
+# while total < stop:
+#     n = int(input("How much do you want to add: "))
+#     total +=n
+#     print(total)
 
 
 
 
 
 ##Slide 30 - While Loop for entering data
-# theSum = 0.0
-# data = input('Enter a number or just enter to quit: ')
+theSum = 0.0
+data = input('Enter a number or just enter to quit: ')
+print(data)
 
-pass # Loop triggers if a string is not empty
+while data != '':# Loop triggers if a string is not empty
+    number = float(data)
+    theSum += number
+    data = input("Enter a number, please: ")
+    print(theSum)
 
 
 
