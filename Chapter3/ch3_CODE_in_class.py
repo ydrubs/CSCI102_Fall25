@@ -269,37 +269,61 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 
 
 ##Slide 30 - While Loop for entering data
-theSum = 0.0
-data = input('Enter a number or just enter to quit: ')
-print(data)
-
-while data != '':# Loop triggers if a string is not empty
-    number = float(data)
-    theSum += number
-    data = input("Enter a number, please: ")
-    print(theSum)
+# theSum = 0.0
+# data = input('Enter a number or just enter to quit: ')
+# print(data)
+#
+# while data != '':# Loop triggers if a string is not empty
+#     number = float(data)
+#     theSum += number
+#     data = input("Enter a number, please: ")
+#     print(theSum)
 
 
 
 
 ##Slide 31 - Breaking a loop
-
-
+# theSum = 0.0
+#
+# while True:
+#     data = input('Enter a number or just enter to quit: ')
+#     if data == 'stop':
+#         break
+#
+#     number = float(data)
+#     theSum += number
+#     print(theSum)
 
 
 
 
 ##Slide 33 - While loop to validate data
 
-pass # Runs forever (until break)
+# while True: # Runs forever (until break)
+#     number = int(input("Enter a number between 0 and 100, please: "))
+#     if number >=0 and number <=100:
+#         print("thanks")
+#         break
+#
+#     else:
+#         print(f"Error, the number is out of range, you put in {number}")
+
+
 
 
 
 
 ## Slide 34 - The While and the Boolean flag
-
-
-
+# done = False
+#
+# while not done:
+#     number = int(input("Enter a number between 0 and 100, please: "))
+#     if number >=0 and number <=100:
+#         print("setting done to True")
+#         done = True
+#
+#     else:
+#         print(f"Error, the number is out of range, you put in {number}")
 
 
 ## Slide 35 - Common while loop logic errors
