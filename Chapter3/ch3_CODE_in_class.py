@@ -1,6 +1,6 @@
 ##Slide 5 - One way selection statement
 # name = input("Enter your username: ") # Assign user input to the 'name' variable
-
+import random
 
 # if name == 'admin':
 #     print("Access granted.")
@@ -334,6 +334,7 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 #     if number >= 0 and number <= 100:
 #         print(number)
 #         # NEED TO ADD 'break'
+#         # break
 #
 #     else:
 #         print('Error: grade must be between 100 and 0')
@@ -346,6 +347,12 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 #     count += 1
 #     print(a, count)
 
+# while True:
+#     count +=1
+#     print(a, count)
+#     if count > 1000:
+#         break
+
 ###############Did not test for a = 500 condition
 # a = 0
 #
@@ -355,25 +362,40 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 #         print("Boom", a)
 #     if a > 500:
 #         print('Pow', a)
-    ###Doesn't test a = 500
+#     #Doesn't test a = 500
+#     if a == 500: #FIX
+#         print('Here ' * 10)
 
 
 ##Slide 36 - Importing Modules -> Random
+# import random
+# n = random.random()
+# print(n)
+#
+# m = random.randint(1,20)
+# print(m)
 
 
-
-
-pass # Don't have to reference random this way
-
+# from random import randint, random # Don't have to reference random this way
+# n = randint(1,20)
+# m = random()
+# print(n, m)
 
 
 
 
 
 ##Slide 37
-##Dice rolling simulator - generate 10 random numbers between 1 and 6
+##Dice rolling simulator - generate 10 random numbers between 1 and
+from random import randint
 
+number_of_dice = 10
 
+for i in range(number_of_dice):
+    d6 = randint(1,6)
+    d20 = randint(1,20)
+
+    print(f"D6 {d6}, D20 {d20}")
 
 
 
