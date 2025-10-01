@@ -387,16 +387,51 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 
 ##Slide 37
 ##Dice rolling simulator - generate 10 random numbers between 1 and
-from random import randint
-
-number_of_dice = 10
-
-for i in range(number_of_dice):
-    d6 = randint(1,6)
-    d20 = randint(1,20)
-
-    print(f"D6 {d6}, D20 {d20}")
+# from random import randint
+#
+# number_of_dice = 10
+#
+# for i in range(number_of_dice):
+#     d6 = randint(1,6)
+#     d20 = randint(1,20)
+#
+#     print(f"D6 {d6}, D20 {d20}")
 
 
 
 ## Guess the number game
+# import random
+# from random import randint
+#
+# computer_number = randint(1,100)
+# counter = 0
+#
+# while True:
+#     counter += 1
+#     user_number = int(input("Guess a number between 1-100"))
+#
+#     if user_number < computer_number:
+#         print("Too small")
+#     elif user_number > computer_number:
+#         print("Too big")
+#     else:
+#         print(f"You got it in {counter} guesses.")
+#         break
+
+# In-class Exercise (coinflip)
+from random import randint
+
+flip_count = 0
+head_count = 0
+
+while head_count < 10:
+    flip_count +=1
+    result = randint(0,1)
+
+    if result == 0: # 0 means heads
+        head_count +=1
+        # print("You rolled heads, yay!")
+    else:
+        head_count = 0
+
+print(f"It took you {flip_count} flips to get three heads in a row.")
