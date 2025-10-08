@@ -1,46 +1,58 @@
 # #Slide 3 - String from characters demo
+# string = 'Hello to you'
+#
+#
+# for char in string: #Iterate through the individual characters
+#     print(char)
 
-
-pass #Iterate through the individual characters
-
-
-## This will give an ERROR because an integer is not ITERABLE
+# n = 32
+# for digit in n:## This will give an ERROR because an integer is not ITERABLE
+#     print(digit)
 
 
 
 
 #Slide 4 - exploring string indexes
-name = 'Skywalker'
-pass #The first letter is 'S'
+# name = 'Skywalker'
+# print(name[0]) #The first letter is 'S'
+# print(len(name))
 
+# print(name[9]) #Results in an index error because last index is at [8]
+# print(name[len(name)-1]) # This ensures you will print the last letter
 
-pass #Results in an index error because last index is at [8]
-pass # Also an error because len(name) looks at index 9 as well
-
-
-pass # last character is 'r'
-pass #  Second to last character is 'e'
+# print(name[-1]) # last character is 'r'
+# print(name[-2]) #  Second to last character is 'e'
+# print(name[-1*len(name)]) # This also gives last letter
 
 
 
 ##Slide 5
 data = 'Hi there!'
+# print(data[len(data)])
 
 ## Loop Through the indexes of the string (these are numbers)
-
-
+# for i in range(len(data)):
+#     print(i, data[i])
 
 
 ## Loop through the elements of the string
+# for char in data:
+#     print(char)
 
 
 
 
 ### YOUR TURN
+song = 'Harmony Hall'
 
+print(song[1])
+print(len(song))
 
+for i in range(len(song)):
+    print(song[i], end = ':)')
 
-
+for char in song:
+    print(char)
 
 ##Slide 7 - Mutable vs. Immutable Data
 # mutable = ['G', 'O', 'O', 'D']
