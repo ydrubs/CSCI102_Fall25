@@ -419,19 +419,27 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 #         break
 
 # In-class Exercise (coinflip)
-from random import randint
-
-flip_count = 0
-head_count = 0
-
-while head_count < 10:
-    flip_count +=1
-    result = randint(0,1)
-
-    if result == 0: # 0 means heads
-        head_count +=1
-        # print("You rolled heads, yay!")
-    else:
-        head_count = 0
-
-print(f"It took you {flip_count} flips to get three heads in a row.")
+# from random import randint
+#
+#
+# simulations = 10000
+# sum_of_flips = 0
+#
+# for i in range(simulations):
+#     flip_count = 0
+#     head_count = 0
+#
+#     while head_count < 3:
+#         flip_count +=1
+#         result = randint(0,1)
+#
+#         if result == 0: # 0 means heads
+#             head_count +=1
+#             # print("You rolled heads, yay!")
+#         else:
+#             head_count = 0
+#     sum_of_flips += flip_count
+#
+#     # print(f"It took you {flip_count} flips to get three heads in a row.")
+#
+# print(f"It took an average of {sum_of_flips/simulations} flips across {simulations} simulations.")
