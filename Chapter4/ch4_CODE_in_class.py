@@ -27,7 +27,7 @@
 
 
 ##Slide 5
-data = 'Hi there!'
+# data = 'Hi there!'
 # print(data[len(data)])
 
 ## Loop Through the indexes of the string (these are numbers)
@@ -40,63 +40,86 @@ data = 'Hi there!'
 #     print(char)
 
 
-
-
 ### YOUR TURN
-song = 'Harmony Hall'
+# song = 'Harmony Hall'
+#
+# print(song[1])
+# print(len(song))
+#
+# for i in range(len(song)):
+#     print(song[i], end = ':)')
+#
+# for char in song:
+#     print(char)
 
-print(song[1])
-print(len(song))
 
-for i in range(len(song)):
-    print(song[i], end = ':)')
-
-for char in song:
-    print(char)
 
 ##Slide 7 - Mutable vs. Immutable Data
 # mutable = ['G', 'O', 'O', 'D']
-
+# print(mutable[0])
+# mutable[0] = 'H' # Reassigning 'G' to an 'H'
+# print(mutable) # print entire list
 
 
 # immutable = 'Good'
+# print(immutable[0])
+# immutable[0] = 'H' # This will give an error because a string is IMMUTABLE, since you can't change a single element
 
-
+# immutable = 'Hood' # Reassigning variable to something else is OKAY
+# print(immutable)
 
 
 
 ##Slide 9 - string slicing
 name = 'myfile.txt'
-pass # full string
-pass # Only the first character
-pass # First two characters
-pass # Character 2 to 5
-pass # This is the same as name[0:2]
+# print(name[0:]) # full string
 
-pass # Start at third to last and go to last
-pass # Start at the beginning and go every other letter
+# print(name[0:1]) # Only the first character
+
+# print(name[0:2]) # First two characters
+
+# print(name[2:6]) # Start at the third character stop at the 6'th character
+
+# print(name[:2]) # This is the same as name[0:2]
+
+# print(name[-3:-1]) # Start at third to last and go to last
+
+# print(name[0::2]) # Start at the beginning and go every other letter
+
+# print(name[-1::-1]) # Full string Backwards
+
+# print(name[::2]) # Every other character of full string
 
 
-pass #ERROR
-pass # This is okay
-pass # Last three characters combined with the character 2 to 5
+# print(name[100]) #ERROR
+# print(name[0:100]) # This is okay
 
+# print(name[0:3] + name[3:])
 
 ##Slide 9 - Try to run your own experiments with the string below
 # my_string = "Give a man a program, frustrate him for a day. " \
 #             "Teach a man to program, frustrate him for a lifetime."
-
-
+#
+# print(my_string[10:20])
 
 ##Slide 10 - Your turn - Move Two Letters
-
+# my_string = input("Please enter a string to rearrange: ")
+#
+# print(my_string[-2:] + my_string[:-2])
 
 
 
 ##Slide 11 - String Methods
-superhero = 'incredible HULK'
+superhero = 'the incredible HULK'
 
+print(superhero.upper())
+print(superhero.title())
+print(superhero.lower())
 
+print(superhero.isupper()) # Is EVERY CHARACTER upper case?
+
+another_superhero = 'spiderMan'
+print(another_superhero.islower())
 
 
 ##Slide 12 - More Strng Methods
