@@ -110,38 +110,43 @@ name = 'myfile.txt'
 
 
 ##Slide 11 - String Methods
-superhero = 'the incredible HULK'
+# superhero = 'the incredible HULK'
+#
+# print(superhero.upper())
+# print(superhero.title())
+# print(superhero.lower())
+#
+# print(superhero.isupper()) # Is EVERY CHARACTER upper case?
+#
+# another_superhero = 'spiderMan'
+# print(another_superhero.islower())
 
-print(superhero.upper())
-print(superhero.title())
-print(superhero.lower())
 
-print(superhero.isupper()) # Is EVERY CHARACTER upper case?
-
-another_superhero = 'spiderMan'
-print(another_superhero.islower())
-
-
-##Slide 12 - More Strng Methods
+##Slide 12 - More String Methods
 address = '123 Fake St.'
 
 # Check which characters are digits
 # for char in address:
-
+#     print(char, char.isdigit())
+#
+# for char in address:
+#     print(char, char.isupper())
 
 # for char in address:
-
-
-# for char in address:
-
+#     print(char, char.isspace())
+#
 
 ##Slide 13 . Even more string methods
 ##Map a directory of files by using the split command
-# string = "C:\\Users\\yuriy.drubinskiy\OneDrive - Garden City Community College\\Python Class\\Powerpoints and notes"
+# string = "C:\\Users\\yuriy.drubinskiy\\OneDrive - Garden City Community College\\Python Class\\Powerpoints and notes"
+# print(string)
+
+# string = string.split('\\')
+# print(string)
 
 
-
-pass # Combining back into a single string
+# string = '*'.join(string) # Combining back into a single string
+# print(string)
 
 
 ##Slide 13/14 - STRING METHODS SUMMARY
@@ -152,20 +157,20 @@ pass # Combining back into a single string
 
 
 ##Slide 15 - Testing string logic with 'in'
-# text = """A long time ago in a galaxy far far away..
-# It is a period of civil war.
-# Rebel spaceships, striking
-# from a hidden base, have won
-# their first victory against
-# the evil Galactic Empire."""
-#
-pass #True
-pass # False
-pass #TRUE because Ignores case-sensitivity in the string
+text = """A long time ago in a galaxy far far away..
+It is a period of civil war.
+Rebel spaceships, striking
+from a hidden base, have won
+their first victory against
+the evil Galactic Empire."""
+
+print('time' in text) #True
+print('empire' in text) # False
+print('empire' in text.casefold()) #TRUE because Ignores case-sensitivity in the string
 
 
-pass # show all charaters from character 60 to character 69
-pass #Since war first appears at character 67, we can see what characters 60-69 are
+print(text.index('war')) # show all charaters from character 60 to character 69
+print(text[60:70]) #Since war first appears at character 67, we can see what characters 60-69 are
 
 
 
