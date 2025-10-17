@@ -156,38 +156,87 @@ address = '123 Fake St.'
 # print(help(str)) # A more detailed description of each available method
 
 
+
 ##Slide 15 - Testing string logic with 'in'
-text = """A long time ago in a galaxy far far away..
-It is a period of civil war.
-Rebel spaceships, striking
-from a hidden base, have won
-their first victory against
-the evil Galactic Empire."""
-
-print('time' in text) #True
-print('empire' in text) # False
-print('empire' in text.casefold()) #TRUE because Ignores case-sensitivity in the string
-
-
-print(text.index('war')) # show all charaters from character 60 to character 69
-print(text[60:70]) #Since war first appears at character 67, we can see what characters 60-69 are
-
-
-
-##Slide 16
-## The variable below defines a list data structure. We will lean more about this in chapter 5
-# fileList = ['myfile.txt', 'myprogram.exe', 'yourfile.txt', 'dont_open.txt']
+# text = """A long time ago in a galaxy far far away..
+# It is a period of civil war.
+# Rebel spaceships, striking
+# from a hidden base, have won
+# their first victory against
+# the evil Galactic Empire."""
+#
+# print('time' in text) #True
+# print('empire' in text) # False
+# print('empire' in text.casefold()) #TRUE because Ignores case-sensitivity in the string
+#
+#
+# print(text.index('war')) # show all charaters from character 60 to character 69
+# print(text[60:70]) #Since war first appears at character 67, we can see what characters 60-69 are
 
 
 
 
 ##Slide 17 - mini task; counting letters
+# import this
+# words_of_wisdom = """The Zen of Python, by Tim Peters
+#
+# Beautiful is better than ugly.
+# Explicit is better than implicit.
+# Simple is better than complex.
+# Complex is better than complicated.
+# Flat is better than nested.
+# Sparse is better than dense.
+# Readability counts.
+# Special cases aren't special enough to break the rules.
+# Although practicality beats purity.
+# Errors should never pass silently.
+# Unless explicitly silenced.
+# In the face of ambiguity, refuse the temptation to guess.
+# There should be one-- and preferably only one --obvious way to do it.
+# Although that way may not be obvious at first unless you're Dutch.
+# Now is better than never.
+# Although never is often better than *right* now.
+# If the implementation is hard to explain, it's a bad idea.
+# If the implementation is easy to explain, it may be a good idea.
+# Namespaces are one honking great idea -- let's do more of those!"""
+#
+# count = 0
+# FInd the number of 'e' and 'a' in the text
+# for letter in words_of_wisdom:
+#     print(letter)
+#     if letter == 'e':
+#         count +=1
+#     elif letter == 'a':
+#         count +=1
+
+# print(count)
+
+# Boolean Flag demo
+# Checks for an "A" or a number before breaking loop
+while True:
+    my_string = input("Please enter a string: ")
+
+    # Set flags (assume both conditions are false)
+    has_A = False
+    has_number = False
+
+    # CHeck each character in the input
+    for char in my_string:
+        if char == "A":
+            print("Found an A!")
+            has_A = True
+        elif char.isdigit():
+            print("Found a number!")
+            has_number = True
+
+    if has_A and has_number:
+        print("String is valid")
+        break
+    else:
+        print("String is not valid")
 
 
-
-
-
-
+some_string = ""
 
 #Slide 21 - Writing Text to a File
 
