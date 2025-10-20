@@ -213,34 +213,38 @@ address = '123 Fake St.'
 
 # Boolean Flag demo
 # Checks for an "A" or a number before breaking loop
-while True:
-    my_string = input("Please enter a string: ")
-
-    # Set flags (assume both conditions are false)
-    has_A = False
-    has_number = False
-
-    # CHeck each character in the input
-    for char in my_string:
-        if char == "A":
-            print("Found an A!")
-            has_A = True
-        elif char.isdigit():
-            print("Found a number!")
-            has_number = True
-
-    if has_A and has_number:
-        print("String is valid")
-        break
-    else:
-        print("String is not valid")
-
-
-some_string = ""
-
-#Slide 21 - Writing Text to a File
+# while True:
+#     my_string = input("Please enter a string: ")
+#
+#     # Set flags (assume both conditions are false)
+#     has_A = False
+#     has_number = False
+#
+#     # CHeck each character in the input
+#     for char in my_string:
+#         if char == "A":
+#             print("Found an A!")
+#             has_A = True
+#         elif char.isdigit():
+#             print("Found a number!")
+#             has_number = True
+#
+#     if has_A and has_number:
+#         print("String is valid")
+#         break
+#     else:
+#         print("String is not valid")
 
 
+# some_string = ""
+
+#Slide 22 - Writing Text to a File
+# f = open('myfile.txt', 'w')
+# f.write("1. Venus - 5,832 hours\n"
+#         "2. Mercury - 1,408 hours\n"
+#         "3. Mars - 24.6 hours\n"
+#         "4. Earth - 24 hours")
+# f.close()
 
 
 
@@ -254,25 +258,46 @@ Create a text file using Python.
 """
 
 
-#Slide 23 - Writing Numbers to a File
+
+#Slide 24 - Writing Numbers to a File
+# from random import randint
+# f = open('integers.txt', 'w')
+#
+# for count in range(500):
+#         number = randint(1,500)
+#         f.write(str(number) + '\n')
+#
+# f.close()
 
 
 
 
+##Slide 25/26 - Reading Text from a File
+# f = open('myfile.txt', 'r')
+# text = f.read()
+# print(text)
 
-##Slide 24 - Reading Text from a File
 
 
-
-## Since the text file is broken up into lines, readline() adds an extra carrige return (\n)
+## Readline() returns the file line by line
 ## This is useful if you are searching for a specific line or need to take some action based on the contents of a line
-pass #As long as there's data to read, read it
+
+# f = open('myfile.txt', 'r')
+# while True: #As long as there's data to read, read it
+#         line = f.readline()
+#         if line == "":
+#                 break
+#         print('Data Processed' + line)
 
 
+##Slide 27 - Reading Numbers from a File
+f = open('integers.txt', 'r')
 
-##Slide 25 - Reading Numbers from a File
-
-
+theSum = 0
+for line in f:
+        number = int(line)
+        theSum += number
+print(f"The sum is {theSum}")
 
 
 
