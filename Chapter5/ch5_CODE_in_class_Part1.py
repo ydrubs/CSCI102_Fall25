@@ -1,21 +1,29 @@
 ##Slide 5 - Defining lists
 
-# Three element list
-# Lists can mix data types
-# Lists can contain other lists
-# Lists can be empty
 
+fruits = ['apples', 'oranges', 'bananas'] # Three element list
+ultra_fruit = fruits[0] + fruits [1]
+print(ultra_fruit)
 
-# lists have a length
-# Lists can be indexed
+lst = [24, 3.2, 'hello', True] # Lists can mix data types
+coordinates = [[-3,1], [0,3]] # Lists can contain other lists
+freinds = [] # Lists can be empty
 
+# print(len(fruits))# lists have a length
+# print(fruits[1])# Lists can be indexed
+# print(lst[-1]) # Index from the back
 
-# Elements of sublists can be accessed from within a list
+# print(coordinates[0]) # Elements of sublists can be accessed from within a list
+# print(coordinates[1][0]) # Access a sublist element
 
-
+# print(lst[4]) # Error because no element at index 4
 
 # Lists can store the result of other operation
-
+# import math
+# x = 4
+# math_stuff = [x, math.sqrt(x), math.pi, x + 1]
+# print(math_stuff[1]) # gives you 2
+# print(math_stuff[x-1]) # gives you __________
 
 
 #Slide 6 - Your turn
@@ -23,15 +31,28 @@
 
 ##Slide 7
 # Iterable data types can be recast as lists
+from random import randint, choice
+# first = [1,2,3,4]
+# second = list(range(1,53))
+# print(second)
+# print(first[1] + first[3])
+# print(type(first[1])) # second element is an int
+# print(type(first))
+# print(first + second)
 
+# print(max(first))
+# print(min(second))
+# print(sum(second))
 
-
-
+# print(second[randint(1,53)])
+# print(choice(second))
 
 ##Build a list from a string
+message = "a Z"
+message_lst = list(message)
+print(message_lst)
 
-
-
+print(max(message_lst))
 
 ## Other list operations
 # Chek the number of elements in a list
