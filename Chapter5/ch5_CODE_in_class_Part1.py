@@ -3,7 +3,7 @@
 
 fruits = ['apples', 'oranges', 'bananas'] # Three element list
 ultra_fruit = fruits[0] + fruits [1]
-print(ultra_fruit)
+# print(ultra_fruit)
 
 lst = [24, 3.2, 'hello', True] # Lists can mix data types
 coordinates = [[-3,1], [0,3]] # Lists can contain other lists
@@ -32,7 +32,7 @@ freinds = [] # Lists can be empty
 ##Slide 7
 # Iterable data types can be recast as lists
 from random import randint, choice
-# first = [1,2,3,4]
+first = [1,2,3,4]
 # second = list(range(1,53))
 # print(second)
 # print(first[1] + first[3])
@@ -50,40 +50,53 @@ from random import randint, choice
 ##Build a list from a string
 message = "a Z"
 message_lst = list(message)
-print(message_lst)
-
-print(max(message_lst))
+# print(message_lst)
+#
+# print(max(message_lst))
 
 ## Other list operations
-# Chek the number of elements in a list
-# Combine two lists together with a '+' sign
+# print(len(message_lst)) # Chek the number of elements in a list
+# print(message_lst + first)# Combine two lists together with a '+' sign
 
 
 
 
 #Slide 8
 ##This example allows you to add people to a roster by looping through the number of people that get added
-#Get input about number
-# Create an empty list to hold the people
-
-#Loop through however many people we said we wanted to add
-
+# roster_size = int(input("How many people do you want to add: ")) #Get input about number
+# roster = [] #  Create an empty list to hold the people
+#
+# for i in range(roster_size): #Loop through however many people we said we wanted to add
+#     new_member = input("Enter the members name: ")
+#     roster.append(new_member)
+#
+# print(roster)
 
 
 
 
 ##This example generates n random numbers between 1 and 365 and puts them into a list
-
-
-
+# from random import randint
+# number_lst = []
+# n = 60
+#
+# for i in range(n):
+#     number = randint(1,365)
+#     number_lst.append(number)
+#
+# print(number_lst)
+#
 
 # By converting to a set data type we can see if there are any duplicates (like for the birthday problem)
-
-
+# no_duplicates = set(number_lst)
+# print(len(number_lst), len(no_duplicates))
 
 
 ##Slide 10 - Skill Review for exercise 5.1 - Stopping a loop when the 'enter' key is pressed.
-
+while True:
+    data = input("Enter SOMETHING!!!!: ")
+    if data == '':
+        break
 
 
 
