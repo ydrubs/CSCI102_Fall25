@@ -93,34 +93,50 @@ message_lst = list(message)
 
 
 ##Slide 10 - Skill Review for exercise 5.1 - Stopping a loop when the 'enter' key is pressed.
-while True:
-    data = input("Enter SOMETHING!!!!: ")
-    if data == '':
-        break
+# while True:
+#     data = input("Enter SOMETHING!!!!: ")
+#     if data == '':
+#         break
 
 
 
 #Slide 12 - Different operations and list slicing techniques that are possible
-# first = [1,2,3,4]
-# returns second and third element as a new list (not the fourth)
+first = [1,2,3,4,5,6]
+# first = first[2:4] # returns second and third element as a new list (not the fourth)
 # print(first)
+# second = first[::]
+# print(second)
 
+
+# second = first
+
+# new_list = []
+# for element in first:
+#     print(element)
+#     str_numb = float(element)
+#     new_list.append(str_numb)
+# print(new_list)
 
 
 ## Searching through a list
-# find an element in a list, TRUE
-# FALSE
-# TRUE
-# FALSE
+# print(1 in first) # find an element in a list, TRUE
+# print('1' in first)# FALSE
+# print(int('1') in first)# TRUE
+# print(str(1) in first)# FALSE
 
 
 # second = list(range(1,7))
 # print(second)
 
 ## Equality vs equivalency of data:
-#True because elements are not the same
-#False because not the same place in memory
+# print(first == second) #True because elements are not the same
+# print(first is second) #False because not the same place in memory
 
+
+# first[1] = 'hello'
+# print(first)
+# first[-1] = 3.14
+# print(first)
 
 ## Application: Searching through names in a database
 import random
@@ -133,33 +149,49 @@ csci102_Roster = [
     "Elise R. Warden", "Jamir L. Westry", "Lexy N. Yungco"
 ]
 
-# Choose a random student
-
+# random_student = random.choice(csci102_Roster) # Choose a random student
+# print(random_student)
+# print('Bob' in csci102_Roster) # False
+#
+# print('Jamir L. Westry' in csci102_Roster)
+#
+# print(f"{random.randint(-10,10)} points of extra credit goes to {random_student}")
 
 
 ##Slide 13 - Changing elements in a list
 # first = [1,2,3,4]
 
+# csci102_Roster[1] = 'Taylor Swift'
+# print(csci102_Roster)
 
 
 
 ##Slide 14 - Manipulating through looping
-# numbers = [2,3,4,5]
+# numbers = [2,3,4,5,6, 7]
 # Looping using the index of the list
-
+# for i in range(len(numbers)):
+#     numbers[i] = numbers[i] ** 2
+# print(numbers)
 
 
 # n_lst = []
-# Looping using the elements of the list to build a new list
-
+# for number in numbers: # Looping using the elements of the list to build a new list
+#     n_lst.append(number)
+# print(n_lst)
+# n_lst.append(64)
+# print(n_lst, numbers)
 
 ## Loop in order to manipulate each string element
-# sentence = "Python is a good beginner programming language"
-# Split into individual words and make a list
+sentence = "Python is a good beginner programming language"
+sentence_lst = sentence.split()# Split into individual words and make a list
+print(sentence_lst)
+print(len(sentence), len(sentence_lst))
 
-#Loop through each element in the list of string by index
-    #Change each word to upper case and save it into the same position
+for i in range(len(sentence_lst)):#Loop through each element in the list of string by index
+    sentence_lst[i] = sentence_lst[i].upper() #Change each word to upper case and save it into the same position
+    print(sentence_lst[i])
 
+print(sentence_lst)
 
 
 ##Slide 15 - adding elements by index, without replacing data
