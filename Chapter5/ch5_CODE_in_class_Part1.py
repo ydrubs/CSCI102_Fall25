@@ -163,7 +163,7 @@ csci102_Roster = [
 
 # csci102_Roster[1] = 'Taylor Swift'
 # print(csci102_Roster)
-
+#
 
 
 ##Slide 14 - Manipulating through looping
@@ -182,42 +182,86 @@ csci102_Roster = [
 # print(n_lst, numbers)
 
 ## Loop in order to manipulate each string element
-sentence = "Python is a good beginner programming language"
-sentence_lst = sentence.split()# Split into individual words and make a list
-print(sentence_lst)
-print(len(sentence), len(sentence_lst))
-
-for i in range(len(sentence_lst)):#Loop through each element in the list of string by index
-    sentence_lst[i] = sentence_lst[i].upper() #Change each word to upper case and save it into the same position
-    print(sentence_lst[i])
-
-print(sentence_lst)
+# sentence = "Python is a good beginner programming language"
+# sentence_lst = sentence.split()# Split into individual words and make a list
+# print(sentence_lst)
+# print(len(sentence), len(sentence_lst))
+#
+# for i in range(len(sentence_lst)):#Loop through each element in the list of string by index
+#     sentence_lst[i] = sentence_lst[i].upper() #Change each word to upper case and save it into the same position
+#     print(sentence_lst[i])
+#
+# print(sentence_lst)
 
 
 ##Slide 15 - adding elements by index, without replacing data
+# csci102_Roster.insert(1, "Spongebob")
+# print(csci102_Roster)
 
+# csci102_Roster.insert(-1, "10")
+# print(csci102_Roster)
 
+# csci102_Roster.append('Michael Jordan')
+# print(csci102_Roster)
 
+# new_students = ['Larry', 'Curly', 'Moe']
+# csci102_Roster.extend(new_students)
+# print(csci102_Roster)
+
+# big_roster = csci102_Roster + new_students # Does the same thing as extend
+# print(csci102_Roster)
+# print(big_roster)
 
 
 ##Slide 16 - removing elements
-
-
+# last_person = csci102_Roster[-1]
+# print(last_person)
+#
+# last_person = csci102_Roster.pop()
+# print(csci102_Roster)
+# print(last_person)
+#
+# first_person = csci102_Roster.pop(0)
+# print(csci102_Roster)
+# print(first_person)
 
 
 
 ##Remove an element using its name by first finding its position (index)
-# some_person = csci102_Roster.index("Stephen")
-# print(some_person)
+some_person = csci102_Roster.index("Antonio D. Flores-Ayon")
+print(some_person)
+
+some_person = csci102_Roster.pop(some_person)
+print(some_person)
 
 
 # To prevent an index error if the element is not found, we can write a conditional:
-
-
+# csci102_Roster.append(some_person)
+# name = some_person
+# if name in csci102_Roster:
+#     person = csci102_Roster.index(name)
+#     print(f"Hi {name}!!!!")
+# else:
+#     print(f'{name} is not in the Roster')
 
 
 ## Slide 18 practice exercise - IN CLASS
+## Generate a list of 10 random elements that are either 0 or 1, then replace all the 1's with the string 'valid'
+from random import randint
+lst = []
 
+for i in range(10):
+    lst.append(randint(0,1))
+print(lst)
+
+modified_list = []
+for i in range(len(lst)):
+    print(lst[i])
+    if lst[i] == 1:
+        modified_list.append('valid')
+    else:
+        modified_list.append(lst[i])
+print(modified_list)
 
 
 
