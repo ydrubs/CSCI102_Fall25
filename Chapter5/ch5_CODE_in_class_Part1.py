@@ -228,11 +228,11 @@ csci102_Roster = [
 
 
 ##Remove an element using its name by first finding its position (index)
-some_person = csci102_Roster.index("Antonio D. Flores-Ayon")
-print(some_person)
-
-some_person = csci102_Roster.pop(some_person)
-print(some_person)
+# some_person = csci102_Roster.index("Antonio D. Flores-Ayon")
+# print(some_person)
+#
+# some_person = csci102_Roster.pop(some_person)
+# print(some_person)
 
 
 # To prevent an index error if the element is not found, we can write a conditional:
@@ -247,74 +247,117 @@ print(some_person)
 
 ## Slide 18 practice exercise - IN CLASS
 ## Generate a list of 10 random elements that are either 0 or 1, then replace all the 1's with the string 'valid'
-from random import randint
-lst = []
+# from random import randint
+# lst = []
+#
+# for i in range(10):
+#     lst.append(randint(0,1))
+# print(lst)
+#
+# modified_list = []
+# for i in range(len(lst)):
+#     print(lst[i])
+#     if lst[i] == 1:
+#         modified_list.append('valid')
+#     else:
+#         modified_list.append(lst[i])
+# print(modified_list)
 
-for i in range(10):
-    lst.append(randint(0,1))
-print(lst)
 
-modified_list = []
-for i in range(len(lst)):
-    print(lst[i])
-    if lst[i] == 1:
-        modified_list.append('valid')
-    else:
-        modified_list.append(lst[i])
-print(modified_list)
 
 
 
 ##Slide 20 - searching and sorting
 ## Building a list from conditions in another list (keep numbers greater then 15 in new list)
 # from random import randint
-
+# from random import randint
+# lst = []
+#
+# for i in range(20):
+#     lst.append(randint(1,20))
+# print(lst)
+#
+# new_lst = []
+# for number in lst:
+#     if number > 15:
+#         new_lst.append(number)
+#
+# print(new_lst)
 
 
 
 
 
 ## Slide 21
-##Given a list of 20 random integers between 1 and 20, create a new list of all integers that appear more then once.
-
-
+## Given a list of 20 random integers between 1 and 20, create a new list of all integers that appear more then once.
+# from random import randint
+# lst = []
+#
+# for i in range(20):
+#     lst.append(randint(1,20))
+# print(lst)
+#
+# new_lst =[]
+# # print(lst.count(3))
+#
+# for number in lst:
+#     if lst.count(number) > 1:
+#         if number not in new_lst:
+#             new_lst.append(number)
+#
+# print(new_lst)
 
 
 
 
 ##Given TWO lists of random numbers between 1 and 20 create a new list that has the common elements of both lists
+# from random import randint
+# lst = []
+#
+# for i in range(20):
+#     lst.append(randint(1,20))
+#
 # lst2 = []
 # for i in range(20):
 #     lst2.append(randint(1,20))
-
+#
 # print(lst)
 # print(lst2)
-
-
-# prevents double counting the same element (unless the same element appears multiple times on both lists)
-
-
+#
+# new_lst = []
+# for number in lst:
+#     if number in lst2:
+#         new_lst.append(number)
+#         lst2.pop(lst2.index(number))# prevents double counting the same element (unless the same element appears multiple times on both lists)
+#
+# print(new_lst)
+#
 
 
 ##Slide 22 - Sorting a list - NOTICE how sort() vs. sorted() behave HERE
 # lst = [4,10,2,1,7]
 
 # Using Sort()
+# lst.sort() # sort in-place
+# print(lst)
+# lst.sort(reverse = True)
+# print(lst)
 
 
-
-# letters = ['c', 'h', 'b', 'A', 'M', 'B']
-
+# letters = ['c', 'h', 'b', 'A', 'M', 'B', 'a']
+# letters.sort()
+# print(letters)
 
 
 # Using Sorted()
 # lst2 = [4,10,2,1,7]
 
-# This returns the list sorted in numeric order
-# Notice that this returns the original list - not the sorted one
+
+# new_lst = sorted(lst2)# This returns the list sorted in numeric order
+# print(lst2)# Notice that this returns the original list - not the sorted one
 
 # This gives us the correct sorted list
-
+# print(new_lst)
 
 
 ##Slide 24 - Intro to Tuples
