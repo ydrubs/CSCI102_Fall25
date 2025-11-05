@@ -361,23 +361,26 @@ csci102_Roster = [
 
 
 ##Slide 24 - Intro to Tuples
-#Empty tuple container
-
-#Tuples of card ranks
-#Tuple of tuples
-#Tuple of lists
-
-
-# Get element info from a tiple (similar to lists and string)
-
-
-# Demonstrates you can't modify a tuple like you can a list, unless you run the line above
-# If we change the cards tuple to a list we can manipulate elements
-
-
-# Since the third element [2] in the first tuple is a list, it can be modified. We are not modifying the tuple itself
-
-
+# cards = () #Empty tuple container
+# print(type(cards))
+#
+# cards = (6,7,8,9,10, 'Jack') #Tuples of card ranks
+# cards_full = ((2, 'hearts'), (8, 'spades')) #Tuple of tuples
+# print(cards_full[0]) # prints (2, 'hearts')
+# print(cards_full[0][1]) # print 'hearts' from the first tuple in cards_full
+#
+# cars =([2020, 'Chevy', 'Corvette'], [2023, 'Toyota', 'Prius']) #Tuple of lists
+# print(cars[0])
+# # cars[0] = [2020, 'Ford', 'A'] # Cant change a tuple element
+# cars[0][0] = 2021 # This is fine - changes the first element of the first list
+# print(cars)
+#
+#
+# cards_lst = list(cards) # If we change the cards tuple to a list we can manipulate elements
+# print(cards_lst)
+# cards_lst[0] = 'Ace'
+# print(cards_lst)
+#
 
 ##SLide 26
 ### Application: Building a deck of cards by combining tuples
@@ -385,22 +388,34 @@ import random
 
 # suit_tuple = ('hearts', 'diamomds', 'spades', 'clubs')
 # rank_tuple = ('2', '3', '4', '5', '6', '7', '8','9', '10', 'jack', 'queen', 'king', 'ace')
-
+#
 # deck = []
+# for suit in suit_tuple:
+#     for rank in rank_tuple:
+#         card = (rank, suit) #Temporary variable to store the current card in loop
+#         # print (card) # Show the card for debugging
+#         deck.append(card)# Add this card to the deck list
+#
+# print(deck)
+# print(len(deck))
+#
+# random.shuffle(deck)
+# print(deck)
+# print(random.choice(deck))
 
-        #Temporary variable to store the current card in loop
-        # Show the card for debugging
-        # Add this card to the deck list
+
+## Slide 27 (IN_CLASS_TUPLE PRACTICE - point slope form)
+point1 = (2,6)
+point2 = (-3, 8)
 
 
+x1 = point1[0]
+x2 = point2[0]
+y1 = point1[1]
+y2 = point2[1]
 
-
-##Slide 27 (IN_CLASS_TUPLE PRACTICE - point slope form)
-
-
-
-
-
+slope = (y2 - y1) / (x2 - x1)
+print(f"The slope is {slope}")
 
 ##Slide 29
 ##Defining a simple function
