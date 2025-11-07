@@ -405,36 +405,48 @@ import random
 
 
 ## Slide 27 (IN_CLASS_TUPLE PRACTICE - point slope form)
-point1 = (2,6)
-point2 = (-3, 8)
+# point1 = (2,6)
+# point2 = (-3, 8)
+#
+#
+# x1 = point1[0]
+# x2 = point2[0]
+# y1 = point1[1]
+# y2 = point2[1]
+#
+# slope = (y2 - y1) / (x2 - x1)
+# print(f"The slope is {slope}")
 
 
-x1 = point1[0]
-x2 = point2[0]
-y1 = point1[1]
-y2 = point2[1]
 
-slope = (y2 - y1) / (x2 - x1)
-print(f"The slope is {slope}")
 
 ##Slide 29
 ##Defining a simple function
+# def greeting():
+#     print("I am a function")
+#     return 'Hi Everyone'
+    # print("Goodbye") # This won't run after the return
 
-
-
-# Need parenthesis to trigger the function
-
+# greeting() # Need parenthesis to trigger the function
+# print(greeting()) # Shows what the function returns
+# hello = greeting() # Stores the output of a function to a variable
+# print(hello) # THe return statement is stored in 'hello' variable
+#
+# print(greeting) # Shows where function lives in memory
 
 
 ##Slide 31
 ##Pass arguments into a function (no limit on amount or data type)
 # first name and last name are considered POSITIONAL arguments
+# def greeting(first_name, last_name):
+#     data = f'Call me {last_name}, {first_name}, {last_name}'
+#     return data
+
+# greet_me = greeting("James", "Bond")# Pass the corresponding parameters into the function
+# print(greet_me)
 
 
-# Pass the corresponding parameters into the function
-
-
-# If you call a function that expects parameters but does not get them, you get an ERROR
+# greet_me = greeting()# If you call a function that expects parameters but does not get them, you get an ERROR
 
 
 
@@ -443,11 +455,15 @@ print(f"The slope is {slope}")
 ##Slide 32
 ##Pass default values into a function (order of keyword parameters vs. positional parameters matters!)
 ## positional parameters need to be defines FIRST!
+def greeting(first_name = "james", last_name = "Bond"):
+    data = f'Call me {last_name}, {first_name}, {last_name}'
+    return data
 
-# These are KEYWORD Parameters
+greet_me = greeting()# These are KEYWORD Parameters
+print(greet_me) # Prints default parameters
 
-
-# Returns the default parameters
+greet_me = greeting(last_name = "Spongebob", first_name = 'Squidward')
+print(greet_me)
 
 
 # Returns name as "James" instead of 'John'
