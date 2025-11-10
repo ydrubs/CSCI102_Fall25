@@ -455,62 +455,87 @@ import random
 ##Slide 32
 ##Pass default values into a function (order of keyword parameters vs. positional parameters matters!)
 ## positional parameters need to be defines FIRST!
-def greeting(first_name = "james", last_name = "Bond"):
-    data = f'Call me {last_name}, {first_name}, {last_name}'
-    return data
-
-greet_me = greeting()# These are KEYWORD Parameters
-print(greet_me) # Prints default parameters
-
-greet_me = greeting(last_name = "Spongebob", first_name = 'Squidward')
-print(greet_me)
-
-
-# Returns name as "James" instead of 'John'
-
-
-# Returns a last name of "James" instead of "Doe"
-
-
-# Without a parameter name they take the value based on the order (position) they are declared
-
+# def greeting(first_name = "James", last_name = "Bond"):
+#     data = f'Call me {last_name}, {first_name}, {last_name}'
+#     return data
+#
+# greet_me = greeting()# These are KEYWORD Parameters
+# print(greet_me) # Prints default parameters
+#
+# greet_me = greeting(last_name = "Spongebob", first_name = 'Squidward')
+# print(greet_me)
 
 
 
 ## Using BOTH POSITIONAL and KEYWORD
-
-
+# def greeting(first_name : str, last_name = "Bond"):
+#     data = f'Call me {last_name}, {first_name}, {last_name}'
+#     return data
+#
+# # greet_me = greeting() # Will give an error, 1 argument
+# greet_me = greeting("James") # This is fine because last name has a default value
+# greet_me = greeting("James", last_name = 'Lebron') # THis is fine too
+# print(greet_me)
 
 
 # ERROR because POSITIONAL comes before KEYWORD
-
-
+# def greeting(first_name = "James", last_name): # Keyword argument is first, positional is second - BIG NO
+#     data = f'Call me {last_name}, {first_name}, {last_name}'
+#     return data
+#
 
 ##Try it:
 """Write a function called find_bigger that accepts two decimal number and returns the bigger of the two"""
-
-
-
+# def find_bigger(a = 0, b = 0):
+#     if a > b:
+#         return a
+#     elif b > a:
+#         return b
+#     return f"There is no bigger number"
+#
+# # result = find_bigger(0, 0.8)
+# result = find_bigger(b = 5, a = 6)
+# print(result)
 
 
 ##Slide 33
 """Write a function named only_ints that takes two parameters.
 Your function should return True if both parameters are integers, and False otherwise."""
 # Returns True only is a string is a valid integer
-
-
+# def only_ints(a,b):
+#     # if a.is_integer() and b.is_integer():
+#     #     return True
+#     # return False
+#
+#     if str(a).isnumeric()  and str(b).isnumeric():
+#         return True
+#     return False
+#
+#
+# result = only_ints(1, 3.14)
+# print(result) # Returns False
+#
+# result = only_ints(1, 3)
+# print(result) # Returns True
+# #
+# result = only_ints('one', 3)
+# print(result) # Returns False
+#
+# result = only_ints([1,2,3], 3)
+# print(result) # Returns False
+#
 
 
 # ##Slide 34
 ## Write a function that removes digits from a string and returns it back with only alphabetic characters.
-
+# TRY IT - NO AI
 
 
 
 
 ##Slide 35
 ##Write a function that accepts an integer and returns the sum of its digits
-
+# TRY IT - NO AI
 
 
 
