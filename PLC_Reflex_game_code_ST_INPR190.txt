@@ -1,0 +1,52 @@
+(* Rising edge detection *)
+delay_start_R(CLK := start_button);
+stop_R(CLK := stop_button);
+
+CASE gameState OF
+
+    0:  (* READY STATE *)
+        redLED := TRUE;
+        blueLED := FALSE;
+        greenLED := FALSE;
+
+        delayTimer(IN := FALSE);
+        reactTimer(IN := FALSE);
+
+        IF delay_start_R.Q THEN
+            (* Generate random delay 2–7 seconds *)
+            seed := sysTimerHiRes;
+            seed := seed * 1664525 + 1013904223;
+            delay_start_time := (seed MOD 6) + 2;  (* 2–7 *)
+
+            delayTimer(IN := TRUE, PT := delay_start_time * 1000);
+            redLED := FALSE;
+            gameState := 1;
+        END_IF;
+
+    1:  (* WAIT STATE – Random delay running *)
+        delayTimer(IN := delayTimer.IN, PT := delay_start_time * 1000);
+
+        IF delayTimer.Q THEN
+            blueLED := TRUE;
+            reactTimer(IN := TRUE, PT := 6000);  (* max reflex time 60s *)
+            gameState := 2;
+        END_IF;
+
+    2:  (* REFLEX STATE – Measure reaction *)
+        reactTimer(IN := reactTimer.IN, PT := 6000);
+
+        IF stop_R.Q THEN
+            reactionTime := TO_DINT(reactTimer.ET);  (* store elapsed time in ms *)
+            blueLED := FALSE;
+            greenLED := TRUE;
+            gameState := 3;
+        END_IF;
+
+    3:  (* RESULT STATE – Show reaction, wait for restart *)
+        IF delay_start_R.Q THEN
+            gameState := 0;  (* back to Ready *)
+        END_IF;
+
+ELSE
+    gameState := 0;
+END_CASE;
