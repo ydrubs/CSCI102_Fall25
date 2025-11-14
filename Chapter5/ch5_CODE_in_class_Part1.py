@@ -507,11 +507,11 @@ Your function should return True if both parameters are integers, and False othe
 #     #     return True
 #     # return False
 #
-#     if str(a).isnumeric()  and str(b).isnumeric():
-#         return True
-#     return False
-#
-#
+    # if str(a).isnumeric()  and str(b).isnumeric():
+    #     return True
+    # return False
+
+
 # result = only_ints(1, 3.14)
 # print(result) # Returns False
 #
@@ -523,12 +523,25 @@ Your function should return True if both parameters are integers, and False othe
 #
 # result = only_ints([1,2,3], 3)
 # print(result) # Returns False
-#
+
+
 
 
 # ##Slide 34
 ## Write a function that removes digits from a string and returns it back with only alphabetic characters.
 # TRY IT - NO AI
+# def remove_digits(word):
+#     only_letters = ""
+#
+#     for char in word:
+#         if not char.isnumeric():
+#             only_letters += char
+#
+#     return only_letters
+#
+# password = input("Please enter a password")
+# result = remove_digits(password)
+# print(result)
 
 
 
@@ -536,11 +549,53 @@ Your function should return True if both parameters are integers, and False othe
 ##Slide 35
 ##Write a function that accepts an integer and returns the sum of its digits
 # TRY IT - NO AI
+# def sum_of_numbers(n : int):
+#     value = str(n) # Turns int into an iterable string
+#
+#     sum_of_digits = 0
+#
+#     for digit in value:
+#         to_int = int(digit)
+#         sum_of_digits += to_int
+#
+#     return sum_of_digits
+#
+# result = sum_of_numbers(901)
+# print(result)
 
 
+##Practice - Write a function that accepts an integer and returns a list of its factors.
+def factors(n):
+    factors_lst = []
+
+    for i in range(1, n+1):
+        if n % i == 0:
+            factors_lst.append(i)
+
+    return factors_lst
+
+result = factors(128)
+print(result)
 
 
 ###########Extra Example
 """Write a function that takes an integer and returns all integers within a range whose sum of digits is equal to the integer passed in.
 For example if 11 is passed in then 29,38,47,etc.. are returned because 2+9=11, 3+8=11, etc..."""
+def numbers_with_digit_sum(target_sum, start=0, end=1000):
+    result = []  # this will store the numbers we find
 
+    for num in range(start, end):
+        # find the sum of the digits
+        digits = str(num)  # turn the number into a string
+        total = 0
+        for d in digits:
+            total += int(d)  # add each digit to the total
+
+        # check if the total equals the target_sum
+        if total == target_sum:
+            result.append(num)
+
+    return result
+
+sum_lst = numbers_with_digit_sum(21)
+print(sum_lst)
