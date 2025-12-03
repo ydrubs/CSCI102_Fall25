@@ -60,3 +60,63 @@ print(sum(d.values())) # Add up all the values
 
 
 
+
+# PRACTICE 12/3
+# 1)Create a dictionary of states and their capital cities that includes:
+#           1) Kansas – Topeka 2) Texas – Austin 3) Arkansas – Little Rock
+
+# 2) Write a line of code that accesses and prints only capital cities in the above dictionary
+# 2b) Add the state Nebraska and its capital Lincoln
+# 3) Write a for loop that converts the city in each dictionary all capital letters and print the dictionary
+
+places = {'Kansas': 'Topeka', 'Texas': 'Austin', 'Arkansas': 'Little Rock'}
+
+# print(places.values())
+#
+# places['Nebraska'] = 'Lincoln'
+# print(places)
+#
+# print(places['Kansas']) # THis returns the VALUE of the KEY
+
+for city in places.values():
+    # print(city)
+    print(city.upper())
+
+print(places.items())  # Returns key and value as a tuple
+
+for state, city in places.items():
+    print(state, city)
+    city_upper = city.upper()
+    places[state] = city_upper
+
+print(places)
+places['Kansas'] = 'Garden City'  # Overwrites Topeka with Garden City
+print(places)
+
+""" 4)	Explain - Why does the following cause an error: 
+
+    colors = {'Red': 5, 'Blue': 3}
+    print(colors[0])   # Error
+
+    ANSWER: A dictionary is not ordered, so you can't index is entries using integers
+
+"""
+
+# WRAP UP QUESTION - Start two lists
+l1 = ['a', 'b', 'c']
+l2 = [1, 2, 3]
+
+d = {}
+
+# for letter in l1:
+#     print(letter)
+#     d [letter] = ???
+
+for i in range(len(l1)):
+    k = l1[i]
+    d[k] = l2[i]
+
+print(d)
+
+
+
